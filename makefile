@@ -1,4 +1,4 @@
-.Phony: build buildnotest buildtrace clean create
+.Phony: build buildnotest buildtrace clean create protocopy
 build: clean
 	./gradlew app:build
 buildnotest: clean
@@ -11,3 +11,5 @@ clean:
 	./gradlew clean
 create:
 	gradle init
+protocopy:
+	cp app/src/main/proto/*.proto ../pcBookgRPC/proto/
