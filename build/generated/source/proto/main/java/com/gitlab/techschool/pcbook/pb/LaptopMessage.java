@@ -43,9 +43,9 @@ public final class LaptopMessage {
       "book.Keyboard\022\023\n\tweight_kg\030\n \001(\001H\000\022\023\n\twe" +
       "ight_lb\030\013 \001(\001H\000\022\021\n\tprice_usd\030\014 \001(\001\022\024\n\014re" +
       "lease_year\030\r \001(\r\022.\n\nupdated_at\030\016 \001(\0132\032.g" +
-      "oogle.protobuf.TimestampB\010\n\006weightB\'\n\037co" +
-      "m.gitlab.techschool.pcbook.pbP\001Z\002pbb\006pro" +
-      "to3"
+      "oogle.protobuf.TimestampB\010\n\006weightBC\n\037co" +
+      "m.gitlab.techschool.pcbook.pbP\001Z\036github." +
+      "com/TranQuocToan1996/pbb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

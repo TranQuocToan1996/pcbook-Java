@@ -40,8 +40,8 @@ public final class LaptopServiceOuterClass {
       "\001 \001(\t2r\n\rLaptopService\022a\n\014CreateLaptop\022&" +
       ".techschool.pcbook.CreateLaptopRequest\032\'" +
       ".techschool.pcbook.CreateLaptopResponse\"" +
-      "\000B\'\n\037com.gitlab.techschool.pcbook.pbP\001Z\002" +
-      "pbb\006proto3"
+      "\000BC\n\037com.gitlab.techschool.pcbook.pbP\001Z\036" +
+      "github.com/TranQuocToan1996/pbb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

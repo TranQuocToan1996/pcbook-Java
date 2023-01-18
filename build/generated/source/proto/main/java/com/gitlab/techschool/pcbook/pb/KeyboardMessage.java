@@ -32,8 +32,9 @@ public final class KeyboardMessage {
       "ook\"\212\001\n\010Keyboard\0222\n\006layout\030\001 \001(\0162\".techs" +
       "chool.pcbook.Keyboard.Layout\022\017\n\007backlit\030" +
       "\002 \001(\010\"9\n\006Layout\022\013\n\007UNKNOWN\020\000\022\n\n\006QWERTY\020\001" +
-      "\022\n\n\006QWERTZ\020\002\022\n\n\006AZERTY\020\003B\'\n\037com.gitlab.t" +
-      "echschool.pcbook.pbP\001Z\002pbb\006proto3"
+      "\022\n\n\006QWERTZ\020\002\022\n\n\006AZERTY\020\003BC\n\037com.gitlab.t" +
+      "echschool.pcbook.pbP\001Z\036github.com/TranQu" +
+      "ocToan1996/pbb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

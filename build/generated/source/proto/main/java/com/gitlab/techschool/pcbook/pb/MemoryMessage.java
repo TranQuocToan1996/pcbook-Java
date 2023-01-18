@@ -33,8 +33,9 @@ public final class MemoryMessage {
       "\0162\036.techschool.pcbook.Memory.Unit\"^\n\004Uni" +
       "t\022\013\n\007UNKNOWN\020\000\022\007\n\003BIT\020\001\022\010\n\004BYTE\020\002\022\014\n\010KIL" +
       "OBYTE\020\003\022\014\n\010MEGABYTE\020\004\022\014\n\010GIGABYTE\020\005\022\014\n\010T" +
-      "ERABYTE\020\006B\'\n\037com.gitlab.techschool.pcboo" +
-      "k.pbP\001Z\002pbb\006proto3"
+      "ERABYTE\020\006BC\n\037com.gitlab.techschool.pcboo" +
+      "k.pbP\001Z\036github.com/TranQuocToan1996/pbb\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -33,8 +33,9 @@ public final class StorageMessage {
       "driver\030\001 \001(\0162!.techschool.pcbook.Storage" +
       ".Driver\022)\n\006memory\030\002 \001(\0132\031.techschool.pcb" +
       "ook.Memory\"\'\n\006Driver\022\013\n\007UNKNOWN\020\000\022\007\n\003HDD" +
-      "\020\001\022\007\n\003SSD\020\002B\'\n\037com.gitlab.techschool.pcb" +
-      "ook.pbP\001Z\002pbb\006proto3"
+      "\020\001\022\007\n\003SSD\020\002BC\n\037com.gitlab.techschool.pcb" +
+      "ook.pbP\001Z\036github.com/TranQuocToan1996/pb" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

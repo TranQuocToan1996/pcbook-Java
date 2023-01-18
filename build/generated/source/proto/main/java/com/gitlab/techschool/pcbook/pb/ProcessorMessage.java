@@ -40,8 +40,9 @@ public final class ProcessorMessage {
       "\005 \001(\001\022\017\n\007max_ghz\030\006 \001(\001\"o\n\003GPU\022\r\n\005brand\030\001" +
       " \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007min_ghz\030\003 \001(\001\022\017\n\007m" +
       "ax_ghz\030\004 \001(\001\022)\n\006memory\030\005 \001(\0132\031.techschoo" +
-      "l.pcbook.MemoryB\'\n\037com.gitlab.techschool" +
-      ".pcbook.pbP\001Z\002pbb\006proto3"
+      "l.pcbook.MemoryBC\n\037com.gitlab.techschool" +
+      ".pcbook.pbP\001Z\036github.com/TranQuocToan199" +
+      "6/pbb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

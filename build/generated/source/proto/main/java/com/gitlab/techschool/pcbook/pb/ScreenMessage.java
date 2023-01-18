@@ -40,8 +40,8 @@ public final class ScreenMessage {
       "book.Screen.Panel\022\022\n\nmultitouch\030\004 \001(\010\032+\n" +
       "\nResolution\022\r\n\005width\030\001 \001(\r\022\016\n\006height\030\002 \001" +
       "(\r\"\'\n\005Panel\022\013\n\007UNKNOWN\020\000\022\007\n\003IPS\020\001\022\010\n\004OLE" +
-      "D\020\002B\'\n\037com.gitlab.techschool.pcbook.pbP\001" +
-      "Z\002pbb\006proto3"
+      "D\020\002BC\n\037com.gitlab.techschool.pcbook.pbP\001" +
+      "Z\036github.com/TranQuocToan1996/pbb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
