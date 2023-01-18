@@ -20,7 +20,7 @@ public class InMemoryLaptopStore implements LaptopStore {
             throw new AlreadyExistExeption("already exist");
         }
 
-        var other = laptop.toBuilder().build();
+        Laptop other = laptop.toBuilder().build();
         data.put(other.getId(), other);
         
     }
@@ -31,7 +31,7 @@ public class InMemoryLaptopStore implements LaptopStore {
             return null;
         }
 
-        var laptop = data.get(id).toBuilder().build();
+        Laptop laptop = data.get(id).toBuilder().build();
         return laptop;
     }
     

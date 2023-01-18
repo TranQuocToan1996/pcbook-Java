@@ -14,4 +14,5 @@ create:
 protocopy:
 	cp app/src/main/proto/*.proto ../pcBookgRPC/proto/
 gen:
-	protoc --proto_path=/src/main/proto --java_out=build/generated/ /src/main/proto/*.proto
+	protoc --proto_path=app/src/main/proto --java_out=app/build/generated/ app/src/main/proto/*.proto 
+

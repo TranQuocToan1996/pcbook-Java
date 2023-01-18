@@ -7,6 +7,7 @@ import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 import pcbookJava.CreateLaptopRequest;
 import pcbookJava.CreateLaptopResponse;
+import pcbookJava.Laptop;
 import pcbookJava.LaptopServiceGrpc.LaptopServiceImplBase;
 
 public class LaptopService extends LaptopServiceImplBase {
@@ -20,8 +21,8 @@ public class LaptopService extends LaptopServiceImplBase {
     @Override
     public void createLaptop(CreateLaptopRequest request,
             StreamObserver<CreateLaptopResponse> reponseObserver) {
-        var laptop = request.getLaptop();
-        var id = laptop.getId();
+        Laptop laptop = request.getLaptop();
+        String id = laptop.getId();
 
         logger.info("got a request with ID: " + id);
 
@@ -40,7 +41,7 @@ public class LaptopService extends LaptopServiceImplBase {
             }
         }
 
-        var other = laptop.toBuilder().setId(uuid.toString()).build();
+        Laptop other = laptop.toBuilder().setId(uuid.toString()).build();
         try {
             store.Save(other);
         } catch (AlreadyExistExeption e) {
@@ -58,6 +59,6 @@ public class LaptopService extends LaptopServiceImplBase {
         }
     }
 
-    CreateLaptopResponse.Builder
+    // CreateLaptopResponse.Builder
 
 }
