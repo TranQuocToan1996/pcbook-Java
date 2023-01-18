@@ -1,19 +1,20 @@
 package com.gitlab.techschool.pcbook.service;
 
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import com.gitlab.techschool.pcbook.pb.CreateLaptopRequest;
 import com.gitlab.techschool.pcbook.pb.CreateLaptopResponse;
 import com.gitlab.techschool.pcbook.pb.Laptop;
 import com.gitlab.techschool.pcbook.pb.LaptopServiceGrpc;
 import com.gitlab.techschool.pcbook.pb.LaptopServiceGrpc.LaptopServiceBlockingStub;
 import com.gitlab.techschool.pcbook.sample.Generator;
+
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.Status;
 import io.grpc.StatusRuntimeException;
-
-import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class LaptopClient {
     private static final Logger logger = Logger.getLogger(LaptopClient.class.getName());
@@ -27,7 +28,7 @@ public class LaptopClient {
                 .build();
 
         blockingStub = LaptopServiceGrpc.newBlockingStub(channel);
-    }
+    }  
 
     public void shutdown() throws InterruptedException {
         channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
