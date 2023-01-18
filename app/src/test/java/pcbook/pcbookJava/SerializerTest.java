@@ -3,7 +3,7 @@ package pcbook.pcbookJava;
 import java.io.IOException;
 
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import pcbookJava.Laptop;
 import sample.Generator;
@@ -11,9 +11,9 @@ import serializer.Serializer;
 
 public class SerializerTest {
     @Test
-    public void writeAndReadBinaryFile() throws IOException {
+    void writeAndReadBinaryFile() throws IOException {
         final String binaryFile = "../laptop.bin";
-        Laptop laptop1 = new Generator().NewLaptop();
+        var laptop1 = new Generator().NewLaptop();
 
         Serializer serializer = new Serializer();
         serializer.WriteBinaryFile(laptop1, binaryFile);

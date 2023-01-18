@@ -13,3 +13,5 @@ create:
 	gradle init
 protocopy:
 	cp app/src/main/proto/*.proto ../pcBookgRPC/proto/
+gen:
+	protoc --proto_path=/src/main/proto --java_out=build/generated/ /src/main/proto/*.proto
