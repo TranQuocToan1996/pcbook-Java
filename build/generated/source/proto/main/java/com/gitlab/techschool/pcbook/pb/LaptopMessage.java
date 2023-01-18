@@ -15,10 +15,10 @@ public final class LaptopMessage {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_techschool_pcbook_Laptop_descriptor;
+    internal_static_pb_Laptop_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_techschool_pcbook_Laptop_fieldAccessorTable;
+      internal_static_pb_Laptop_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -28,24 +28,22 @@ public final class LaptopMessage {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024laptop_message.proto\022\021techschool.pcboo" +
-      "k\032\027processor_message.proto\032\024memory_messa" +
-      "ge.proto\032\025storage_message.proto\032\024screen_" +
-      "message.proto\032\026keyboard_message.proto\032\037g" +
-      "oogle/protobuf/timestamp.proto\"\271\003\n\006Lapto" +
-      "p\022\n\n\002id\030\001 \001(\t\022\r\n\005brand\030\002 \001(\t\022\014\n\004name\030\003 \001" +
-      "(\t\022#\n\003cpu\030\004 \001(\0132\026.techschool.pcbook.CPU\022" +
-      "&\n\003ram\030\005 \001(\0132\031.techschool.pcbook.Memory\022" +
-      "$\n\004gpus\030\006 \003(\0132\026.techschool.pcbook.GPU\022,\n" +
-      "\010storages\030\007 \003(\0132\032.techschool.pcbook.Stor" +
-      "age\022)\n\006screen\030\010 \001(\0132\031.techschool.pcbook." +
-      "Screen\022-\n\010keyboard\030\t \001(\0132\033.techschool.pc" +
-      "book.Keyboard\022\023\n\tweight_kg\030\n \001(\001H\000\022\023\n\twe" +
-      "ight_lb\030\013 \001(\001H\000\022\021\n\tprice_usd\030\014 \001(\001\022\024\n\014re" +
-      "lease_year\030\r \001(\r\022.\n\nupdated_at\030\016 \001(\0132\032.g" +
-      "oogle.protobuf.TimestampB\010\n\006weightBC\n\037co" +
-      "m.gitlab.techschool.pcbook.pbP\001Z\036github." +
-      "com/TranQuocToan1996/pbb\006proto3"
+      "\n\024laptop_message.proto\022\002pb\032\027processor_me" +
+      "ssage.proto\032\024memory_message.proto\032\025stora" +
+      "ge_message.proto\032\024screen_message.proto\032\026" +
+      "keyboard_message.proto\032\037google/protobuf/" +
+      "timestamp.proto\"\337\002\n\006Laptop\022\n\n\002id\030\001 \001(\t\022\r" +
+      "\n\005brand\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\024\n\003cpu\030\004 \001(\013" +
+      "2\007.pb.CPU\022\027\n\003ram\030\005 \001(\0132\n.pb.Memory\022\025\n\004gp" +
+      "us\030\006 \003(\0132\007.pb.GPU\022\035\n\010storages\030\007 \003(\0132\013.pb" +
+      ".Storage\022\032\n\006screen\030\010 \001(\0132\n.pb.Screen\022\036\n\010" +
+      "keyboard\030\t \001(\0132\014.pb.Keyboard\022\023\n\tweight_k" +
+      "g\030\n \001(\001H\000\022\023\n\tweight_lb\030\013 \001(\001H\000\022\021\n\tprice_" +
+      "usd\030\014 \001(\001\022\024\n\014release_year\030\r \001(\r\022.\n\nupdat" +
+      "ed_at\030\016 \001(\0132\032.google.protobuf.TimestampB" +
+      "\010\n\006weightBC\n\037com.gitlab.techschool.pcboo" +
+      "k.pbP\001Z\036github.com/TranQuocToan1996/pbb\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -57,11 +55,11 @@ public final class LaptopMessage {
           com.gitlab.techschool.pcbook.pb.KeyboardMessage.getDescriptor(),
           com.google.protobuf.TimestampProto.getDescriptor(),
         });
-    internal_static_techschool_pcbook_Laptop_descriptor =
+    internal_static_pb_Laptop_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_techschool_pcbook_Laptop_fieldAccessorTable = new
+    internal_static_pb_Laptop_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_techschool_pcbook_Laptop_descriptor,
+        internal_static_pb_Laptop_descriptor,
         new java.lang.String[] { "Id", "Brand", "Name", "Cpu", "Ram", "Gpus", "Storages", "Screen", "Keyboard", "WeightKg", "WeightLb", "PriceUsd", "ReleaseYear", "UpdatedAt", "Weight", });
     com.gitlab.techschool.pcbook.pb.ProcessorMessage.getDescriptor();
     com.gitlab.techschool.pcbook.pb.MemoryMessage.getDescriptor();

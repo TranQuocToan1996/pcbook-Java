@@ -4,7 +4,7 @@
 package com.gitlab.techschool.pcbook.pb;
 
 public interface LaptopOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:techschool.pcbook.Laptop)
+    // @@protoc_insertion_point(interface_extends:pb.Laptop)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -44,110 +44,110 @@ public interface LaptopOrBuilder extends
       getNameBytes();
 
   /**
-   * <code>.techschool.pcbook.CPU cpu = 4;</code>
+   * <code>.pb.CPU cpu = 4;</code>
    * @return Whether the cpu field is set.
    */
   boolean hasCpu();
   /**
-   * <code>.techschool.pcbook.CPU cpu = 4;</code>
+   * <code>.pb.CPU cpu = 4;</code>
    * @return The cpu.
    */
   com.gitlab.techschool.pcbook.pb.CPU getCpu();
   /**
-   * <code>.techschool.pcbook.CPU cpu = 4;</code>
+   * <code>.pb.CPU cpu = 4;</code>
    */
   com.gitlab.techschool.pcbook.pb.CPUOrBuilder getCpuOrBuilder();
 
   /**
-   * <code>.techschool.pcbook.Memory ram = 5;</code>
+   * <code>.pb.Memory ram = 5;</code>
    * @return Whether the ram field is set.
    */
   boolean hasRam();
   /**
-   * <code>.techschool.pcbook.Memory ram = 5;</code>
+   * <code>.pb.Memory ram = 5;</code>
    * @return The ram.
    */
   com.gitlab.techschool.pcbook.pb.Memory getRam();
   /**
-   * <code>.techschool.pcbook.Memory ram = 5;</code>
+   * <code>.pb.Memory ram = 5;</code>
    */
   com.gitlab.techschool.pcbook.pb.MemoryOrBuilder getRamOrBuilder();
 
   /**
-   * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+   * <code>repeated .pb.GPU gpus = 6;</code>
    */
   java.util.List<com.gitlab.techschool.pcbook.pb.GPU> 
       getGpusList();
   /**
-   * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+   * <code>repeated .pb.GPU gpus = 6;</code>
    */
   com.gitlab.techschool.pcbook.pb.GPU getGpus(int index);
   /**
-   * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+   * <code>repeated .pb.GPU gpus = 6;</code>
    */
   int getGpusCount();
   /**
-   * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+   * <code>repeated .pb.GPU gpus = 6;</code>
    */
   java.util.List<? extends com.gitlab.techschool.pcbook.pb.GPUOrBuilder> 
       getGpusOrBuilderList();
   /**
-   * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+   * <code>repeated .pb.GPU gpus = 6;</code>
    */
   com.gitlab.techschool.pcbook.pb.GPUOrBuilder getGpusOrBuilder(
       int index);
 
   /**
-   * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+   * <code>repeated .pb.Storage storages = 7;</code>
    */
   java.util.List<com.gitlab.techschool.pcbook.pb.Storage> 
       getStoragesList();
   /**
-   * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+   * <code>repeated .pb.Storage storages = 7;</code>
    */
   com.gitlab.techschool.pcbook.pb.Storage getStorages(int index);
   /**
-   * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+   * <code>repeated .pb.Storage storages = 7;</code>
    */
   int getStoragesCount();
   /**
-   * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+   * <code>repeated .pb.Storage storages = 7;</code>
    */
   java.util.List<? extends com.gitlab.techschool.pcbook.pb.StorageOrBuilder> 
       getStoragesOrBuilderList();
   /**
-   * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+   * <code>repeated .pb.Storage storages = 7;</code>
    */
   com.gitlab.techschool.pcbook.pb.StorageOrBuilder getStoragesOrBuilder(
       int index);
 
   /**
-   * <code>.techschool.pcbook.Screen screen = 8;</code>
+   * <code>.pb.Screen screen = 8;</code>
    * @return Whether the screen field is set.
    */
   boolean hasScreen();
   /**
-   * <code>.techschool.pcbook.Screen screen = 8;</code>
+   * <code>.pb.Screen screen = 8;</code>
    * @return The screen.
    */
   com.gitlab.techschool.pcbook.pb.Screen getScreen();
   /**
-   * <code>.techschool.pcbook.Screen screen = 8;</code>
+   * <code>.pb.Screen screen = 8;</code>
    */
   com.gitlab.techschool.pcbook.pb.ScreenOrBuilder getScreenOrBuilder();
 
   /**
-   * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+   * <code>.pb.Keyboard keyboard = 9;</code>
    * @return Whether the keyboard field is set.
    */
   boolean hasKeyboard();
   /**
-   * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+   * <code>.pb.Keyboard keyboard = 9;</code>
    * @return The keyboard.
    */
   com.gitlab.techschool.pcbook.pb.Keyboard getKeyboard();
   /**
-   * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+   * <code>.pb.Keyboard keyboard = 9;</code>
    */
   com.gitlab.techschool.pcbook.pb.KeyboardOrBuilder getKeyboardOrBuilder();
 

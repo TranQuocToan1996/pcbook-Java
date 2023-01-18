@@ -4,11 +4,11 @@
 package com.gitlab.techschool.pcbook.pb;
 
 /**
- * Protobuf type {@code techschool.pcbook.Keyboard}
+ * Protobuf type {@code pb.Keyboard}
  */
 public final class Keyboard extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:techschool.pcbook.Keyboard)
+    // @@protoc_insertion_point(message_implements:pb.Keyboard)
     KeyboardOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use Keyboard.newBuilder() to construct.
@@ -33,19 +33,19 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.gitlab.techschool.pcbook.pb.KeyboardMessage.internal_static_techschool_pcbook_Keyboard_descriptor;
+    return com.gitlab.techschool.pcbook.pb.KeyboardMessage.internal_static_pb_Keyboard_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.gitlab.techschool.pcbook.pb.KeyboardMessage.internal_static_techschool_pcbook_Keyboard_fieldAccessorTable
+    return com.gitlab.techschool.pcbook.pb.KeyboardMessage.internal_static_pb_Keyboard_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.gitlab.techschool.pcbook.pb.Keyboard.class, com.gitlab.techschool.pcbook.pb.Keyboard.Builder.class);
   }
 
   /**
-   * Protobuf enum {@code techschool.pcbook.Keyboard.Layout}
+   * Protobuf enum {@code pb.Keyboard.Layout}
    */
   public enum Layout
       implements com.google.protobuf.ProtocolMessageEnum {
@@ -167,20 +167,20 @@ private static final long serialVersionUID = 0L;
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:techschool.pcbook.Keyboard.Layout)
+    // @@protoc_insertion_point(enum_scope:pb.Keyboard.Layout)
   }
 
   public static final int LAYOUT_FIELD_NUMBER = 1;
   private int layout_ = 0;
   /**
-   * <code>.techschool.pcbook.Keyboard.Layout layout = 1;</code>
+   * <code>.pb.Keyboard.Layout layout = 1;</code>
    * @return The enum numeric value on the wire for layout.
    */
   @java.lang.Override public int getLayoutValue() {
     return layout_;
   }
   /**
-   * <code>.techschool.pcbook.Keyboard.Layout layout = 1;</code>
+   * <code>.pb.Keyboard.Layout layout = 1;</code>
    * @return The layout.
    */
   @java.lang.Override public com.gitlab.techschool.pcbook.pb.Keyboard.Layout getLayout() {
@@ -366,21 +366,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code techschool.pcbook.Keyboard}
+   * Protobuf type {@code pb.Keyboard}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:techschool.pcbook.Keyboard)
+      // @@protoc_insertion_point(builder_implements:pb.Keyboard)
       com.gitlab.techschool.pcbook.pb.KeyboardOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gitlab.techschool.pcbook.pb.KeyboardMessage.internal_static_techschool_pcbook_Keyboard_descriptor;
+      return com.gitlab.techschool.pcbook.pb.KeyboardMessage.internal_static_pb_Keyboard_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gitlab.techschool.pcbook.pb.KeyboardMessage.internal_static_techschool_pcbook_Keyboard_fieldAccessorTable
+      return com.gitlab.techschool.pcbook.pb.KeyboardMessage.internal_static_pb_Keyboard_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.gitlab.techschool.pcbook.pb.Keyboard.class, com.gitlab.techschool.pcbook.pb.Keyboard.Builder.class);
     }
@@ -407,7 +407,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.gitlab.techschool.pcbook.pb.KeyboardMessage.internal_static_techschool_pcbook_Keyboard_descriptor;
+      return com.gitlab.techschool.pcbook.pb.KeyboardMessage.internal_static_pb_Keyboard_descriptor;
     }
 
     @java.lang.Override
@@ -547,14 +547,14 @@ private static final long serialVersionUID = 0L;
 
     private int layout_ = 0;
     /**
-     * <code>.techschool.pcbook.Keyboard.Layout layout = 1;</code>
+     * <code>.pb.Keyboard.Layout layout = 1;</code>
      * @return The enum numeric value on the wire for layout.
      */
     @java.lang.Override public int getLayoutValue() {
       return layout_;
     }
     /**
-     * <code>.techschool.pcbook.Keyboard.Layout layout = 1;</code>
+     * <code>.pb.Keyboard.Layout layout = 1;</code>
      * @param value The enum numeric value on the wire for layout to set.
      * @return This builder for chaining.
      */
@@ -565,7 +565,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Keyboard.Layout layout = 1;</code>
+     * <code>.pb.Keyboard.Layout layout = 1;</code>
      * @return The layout.
      */
     @java.lang.Override
@@ -574,7 +574,7 @@ private static final long serialVersionUID = 0L;
       return result == null ? com.gitlab.techschool.pcbook.pb.Keyboard.Layout.UNRECOGNIZED : result;
     }
     /**
-     * <code>.techschool.pcbook.Keyboard.Layout layout = 1;</code>
+     * <code>.pb.Keyboard.Layout layout = 1;</code>
      * @param value The layout to set.
      * @return This builder for chaining.
      */
@@ -588,7 +588,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Keyboard.Layout layout = 1;</code>
+     * <code>.pb.Keyboard.Layout layout = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearLayout() {
@@ -642,10 +642,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:techschool.pcbook.Keyboard)
+    // @@protoc_insertion_point(builder_scope:pb.Keyboard)
   }
 
-  // @@protoc_insertion_point(class_scope:techschool.pcbook.Keyboard)
+  // @@protoc_insertion_point(class_scope:pb.Keyboard)
   private static final com.gitlab.techschool.pcbook.pb.Keyboard DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.gitlab.techschool.pcbook.pb.Keyboard();

@@ -4,11 +4,11 @@
 package com.gitlab.techschool.pcbook.pb;
 
 /**
- * Protobuf type {@code techschool.pcbook.Screen}
+ * Protobuf type {@code pb.Screen}
  */
 public final class Screen extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:techschool.pcbook.Screen)
+    // @@protoc_insertion_point(message_implements:pb.Screen)
     ScreenOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use Screen.newBuilder() to construct.
@@ -33,19 +33,19 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_techschool_pcbook_Screen_descriptor;
+    return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_pb_Screen_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_techschool_pcbook_Screen_fieldAccessorTable
+    return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_pb_Screen_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.gitlab.techschool.pcbook.pb.Screen.class, com.gitlab.techschool.pcbook.pb.Screen.Builder.class);
   }
 
   /**
-   * Protobuf enum {@code techschool.pcbook.Screen.Panel}
+   * Protobuf enum {@code pb.Screen.Panel}
    */
   public enum Panel
       implements com.google.protobuf.ProtocolMessageEnum {
@@ -158,11 +158,11 @@ private static final long serialVersionUID = 0L;
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:techschool.pcbook.Screen.Panel)
+    // @@protoc_insertion_point(enum_scope:pb.Screen.Panel)
   }
 
   public interface ResolutionOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:techschool.pcbook.Screen.Resolution)
+      // @@protoc_insertion_point(interface_extends:pb.Screen.Resolution)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -178,11 +178,11 @@ private static final long serialVersionUID = 0L;
     int getHeight();
   }
   /**
-   * Protobuf type {@code techschool.pcbook.Screen.Resolution}
+   * Protobuf type {@code pb.Screen.Resolution}
    */
   public static final class Resolution extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:techschool.pcbook.Screen.Resolution)
+      // @@protoc_insertion_point(message_implements:pb.Screen.Resolution)
       ResolutionOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use Resolution.newBuilder() to construct.
@@ -206,13 +206,13 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_techschool_pcbook_Screen_Resolution_descriptor;
+      return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_pb_Screen_Resolution_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_techschool_pcbook_Screen_Resolution_fieldAccessorTable
+      return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_pb_Screen_Resolution_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.gitlab.techschool.pcbook.pb.Screen.Resolution.class, com.gitlab.techschool.pcbook.pb.Screen.Resolution.Builder.class);
     }
@@ -406,21 +406,21 @@ private static final long serialVersionUID = 0L;
       return builder;
     }
     /**
-     * Protobuf type {@code techschool.pcbook.Screen.Resolution}
+     * Protobuf type {@code pb.Screen.Resolution}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:techschool.pcbook.Screen.Resolution)
+        // @@protoc_insertion_point(builder_implements:pb.Screen.Resolution)
         com.gitlab.techschool.pcbook.pb.Screen.ResolutionOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_techschool_pcbook_Screen_Resolution_descriptor;
+        return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_pb_Screen_Resolution_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_techschool_pcbook_Screen_Resolution_fieldAccessorTable
+        return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_pb_Screen_Resolution_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.gitlab.techschool.pcbook.pb.Screen.Resolution.class, com.gitlab.techschool.pcbook.pb.Screen.Resolution.Builder.class);
       }
@@ -447,7 +447,7 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_techschool_pcbook_Screen_Resolution_descriptor;
+        return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_pb_Screen_Resolution_descriptor;
       }
 
       @java.lang.Override
@@ -661,10 +661,10 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:techschool.pcbook.Screen.Resolution)
+      // @@protoc_insertion_point(builder_scope:pb.Screen.Resolution)
     }
 
-    // @@protoc_insertion_point(class_scope:techschool.pcbook.Screen.Resolution)
+    // @@protoc_insertion_point(class_scope:pb.Screen.Resolution)
     private static final com.gitlab.techschool.pcbook.pb.Screen.Resolution DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.gitlab.techschool.pcbook.pb.Screen.Resolution();
@@ -726,7 +726,7 @@ private static final long serialVersionUID = 0L;
   public static final int RESOLUTION_FIELD_NUMBER = 2;
   private com.gitlab.techschool.pcbook.pb.Screen.Resolution resolution_;
   /**
-   * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+   * <code>.pb.Screen.Resolution resolution = 2;</code>
    * @return Whether the resolution field is set.
    */
   @java.lang.Override
@@ -734,7 +734,7 @@ private static final long serialVersionUID = 0L;
     return resolution_ != null;
   }
   /**
-   * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+   * <code>.pb.Screen.Resolution resolution = 2;</code>
    * @return The resolution.
    */
   @java.lang.Override
@@ -742,7 +742,7 @@ private static final long serialVersionUID = 0L;
     return resolution_ == null ? com.gitlab.techschool.pcbook.pb.Screen.Resolution.getDefaultInstance() : resolution_;
   }
   /**
-   * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+   * <code>.pb.Screen.Resolution resolution = 2;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.Screen.ResolutionOrBuilder getResolutionOrBuilder() {
@@ -752,14 +752,14 @@ private static final long serialVersionUID = 0L;
   public static final int PANEL_FIELD_NUMBER = 3;
   private int panel_ = 0;
   /**
-   * <code>.techschool.pcbook.Screen.Panel panel = 3;</code>
+   * <code>.pb.Screen.Panel panel = 3;</code>
    * @return The enum numeric value on the wire for panel.
    */
   @java.lang.Override public int getPanelValue() {
     return panel_;
   }
   /**
-   * <code>.techschool.pcbook.Screen.Panel panel = 3;</code>
+   * <code>.pb.Screen.Panel panel = 3;</code>
    * @return The panel.
    */
   @java.lang.Override public com.gitlab.techschool.pcbook.pb.Screen.Panel getPanel() {
@@ -974,21 +974,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code techschool.pcbook.Screen}
+   * Protobuf type {@code pb.Screen}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:techschool.pcbook.Screen)
+      // @@protoc_insertion_point(builder_implements:pb.Screen)
       com.gitlab.techschool.pcbook.pb.ScreenOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_techschool_pcbook_Screen_descriptor;
+      return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_pb_Screen_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_techschool_pcbook_Screen_fieldAccessorTable
+      return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_pb_Screen_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.gitlab.techschool.pcbook.pb.Screen.class, com.gitlab.techschool.pcbook.pb.Screen.Builder.class);
     }
@@ -1021,7 +1021,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_techschool_pcbook_Screen_descriptor;
+      return com.gitlab.techschool.pcbook.pb.ScreenMessage.internal_static_pb_Screen_descriptor;
     }
 
     @java.lang.Override
@@ -1221,14 +1221,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Screen.Resolution, com.gitlab.techschool.pcbook.pb.Screen.Resolution.Builder, com.gitlab.techschool.pcbook.pb.Screen.ResolutionOrBuilder> resolutionBuilder_;
     /**
-     * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+     * <code>.pb.Screen.Resolution resolution = 2;</code>
      * @return Whether the resolution field is set.
      */
     public boolean hasResolution() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+     * <code>.pb.Screen.Resolution resolution = 2;</code>
      * @return The resolution.
      */
     public com.gitlab.techschool.pcbook.pb.Screen.Resolution getResolution() {
@@ -1239,7 +1239,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+     * <code>.pb.Screen.Resolution resolution = 2;</code>
      */
     public Builder setResolution(com.gitlab.techschool.pcbook.pb.Screen.Resolution value) {
       if (resolutionBuilder_ == null) {
@@ -1255,7 +1255,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+     * <code>.pb.Screen.Resolution resolution = 2;</code>
      */
     public Builder setResolution(
         com.gitlab.techschool.pcbook.pb.Screen.Resolution.Builder builderForValue) {
@@ -1269,7 +1269,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+     * <code>.pb.Screen.Resolution resolution = 2;</code>
      */
     public Builder mergeResolution(com.gitlab.techschool.pcbook.pb.Screen.Resolution value) {
       if (resolutionBuilder_ == null) {
@@ -1288,7 +1288,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+     * <code>.pb.Screen.Resolution resolution = 2;</code>
      */
     public Builder clearResolution() {
       bitField0_ = (bitField0_ & ~0x00000002);
@@ -1301,7 +1301,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+     * <code>.pb.Screen.Resolution resolution = 2;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Screen.Resolution.Builder getResolutionBuilder() {
       bitField0_ |= 0x00000002;
@@ -1309,7 +1309,7 @@ private static final long serialVersionUID = 0L;
       return getResolutionFieldBuilder().getBuilder();
     }
     /**
-     * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+     * <code>.pb.Screen.Resolution resolution = 2;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Screen.ResolutionOrBuilder getResolutionOrBuilder() {
       if (resolutionBuilder_ != null) {
@@ -1320,7 +1320,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+     * <code>.pb.Screen.Resolution resolution = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Screen.Resolution, com.gitlab.techschool.pcbook.pb.Screen.Resolution.Builder, com.gitlab.techschool.pcbook.pb.Screen.ResolutionOrBuilder> 
@@ -1338,14 +1338,14 @@ private static final long serialVersionUID = 0L;
 
     private int panel_ = 0;
     /**
-     * <code>.techschool.pcbook.Screen.Panel panel = 3;</code>
+     * <code>.pb.Screen.Panel panel = 3;</code>
      * @return The enum numeric value on the wire for panel.
      */
     @java.lang.Override public int getPanelValue() {
       return panel_;
     }
     /**
-     * <code>.techschool.pcbook.Screen.Panel panel = 3;</code>
+     * <code>.pb.Screen.Panel panel = 3;</code>
      * @param value The enum numeric value on the wire for panel to set.
      * @return This builder for chaining.
      */
@@ -1356,7 +1356,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Screen.Panel panel = 3;</code>
+     * <code>.pb.Screen.Panel panel = 3;</code>
      * @return The panel.
      */
     @java.lang.Override
@@ -1365,7 +1365,7 @@ private static final long serialVersionUID = 0L;
       return result == null ? com.gitlab.techschool.pcbook.pb.Screen.Panel.UNRECOGNIZED : result;
     }
     /**
-     * <code>.techschool.pcbook.Screen.Panel panel = 3;</code>
+     * <code>.pb.Screen.Panel panel = 3;</code>
      * @param value The panel to set.
      * @return This builder for chaining.
      */
@@ -1379,7 +1379,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Screen.Panel panel = 3;</code>
+     * <code>.pb.Screen.Panel panel = 3;</code>
      * @return This builder for chaining.
      */
     public Builder clearPanel() {
@@ -1433,10 +1433,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:techschool.pcbook.Screen)
+    // @@protoc_insertion_point(builder_scope:pb.Screen)
   }
 
-  // @@protoc_insertion_point(class_scope:techschool.pcbook.Screen)
+  // @@protoc_insertion_point(class_scope:pb.Screen)
   private static final com.gitlab.techschool.pcbook.pb.Screen DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.gitlab.techschool.pcbook.pb.Screen();

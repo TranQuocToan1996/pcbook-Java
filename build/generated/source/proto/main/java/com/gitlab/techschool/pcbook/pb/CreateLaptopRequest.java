@@ -4,11 +4,11 @@
 package com.gitlab.techschool.pcbook.pb;
 
 /**
- * Protobuf type {@code techschool.pcbook.CreateLaptopRequest}
+ * Protobuf type {@code pb.CreateLaptopRequest}
  */
 public final class CreateLaptopRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:techschool.pcbook.CreateLaptopRequest)
+    // @@protoc_insertion_point(message_implements:pb.CreateLaptopRequest)
     CreateLaptopRequestOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use CreateLaptopRequest.newBuilder() to construct.
@@ -32,13 +32,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.gitlab.techschool.pcbook.pb.LaptopServiceOuterClass.internal_static_techschool_pcbook_CreateLaptopRequest_descriptor;
+    return com.gitlab.techschool.pcbook.pb.LaptopServiceOuterClass.internal_static_pb_CreateLaptopRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.gitlab.techschool.pcbook.pb.LaptopServiceOuterClass.internal_static_techschool_pcbook_CreateLaptopRequest_fieldAccessorTable
+    return com.gitlab.techschool.pcbook.pb.LaptopServiceOuterClass.internal_static_pb_CreateLaptopRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.gitlab.techschool.pcbook.pb.CreateLaptopRequest.class, com.gitlab.techschool.pcbook.pb.CreateLaptopRequest.Builder.class);
   }
@@ -46,7 +46,7 @@ private static final long serialVersionUID = 0L;
   public static final int LAPTOP_FIELD_NUMBER = 1;
   private com.gitlab.techschool.pcbook.pb.Laptop laptop_;
   /**
-   * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+   * <code>.pb.Laptop laptop = 1;</code>
    * @return Whether the laptop field is set.
    */
   @java.lang.Override
@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
     return laptop_ != null;
   }
   /**
-   * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+   * <code>.pb.Laptop laptop = 1;</code>
    * @return The laptop.
    */
   @java.lang.Override
@@ -62,7 +62,7 @@ private static final long serialVersionUID = 0L;
     return laptop_ == null ? com.gitlab.techschool.pcbook.pb.Laptop.getDefaultInstance() : laptop_;
   }
   /**
-   * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+   * <code>.pb.Laptop laptop = 1;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.LaptopOrBuilder getLaptopOrBuilder() {
@@ -230,21 +230,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code techschool.pcbook.CreateLaptopRequest}
+   * Protobuf type {@code pb.CreateLaptopRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:techschool.pcbook.CreateLaptopRequest)
+      // @@protoc_insertion_point(builder_implements:pb.CreateLaptopRequest)
       com.gitlab.techschool.pcbook.pb.CreateLaptopRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gitlab.techschool.pcbook.pb.LaptopServiceOuterClass.internal_static_techschool_pcbook_CreateLaptopRequest_descriptor;
+      return com.gitlab.techschool.pcbook.pb.LaptopServiceOuterClass.internal_static_pb_CreateLaptopRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gitlab.techschool.pcbook.pb.LaptopServiceOuterClass.internal_static_techschool_pcbook_CreateLaptopRequest_fieldAccessorTable
+      return com.gitlab.techschool.pcbook.pb.LaptopServiceOuterClass.internal_static_pb_CreateLaptopRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.gitlab.techschool.pcbook.pb.CreateLaptopRequest.class, com.gitlab.techschool.pcbook.pb.CreateLaptopRequest.Builder.class);
     }
@@ -274,7 +274,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.gitlab.techschool.pcbook.pb.LaptopServiceOuterClass.internal_static_techschool_pcbook_CreateLaptopRequest_descriptor;
+      return com.gitlab.techschool.pcbook.pb.LaptopServiceOuterClass.internal_static_pb_CreateLaptopRequest_descriptor;
     }
 
     @java.lang.Override
@@ -409,14 +409,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Laptop, com.gitlab.techschool.pcbook.pb.Laptop.Builder, com.gitlab.techschool.pcbook.pb.LaptopOrBuilder> laptopBuilder_;
     /**
-     * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+     * <code>.pb.Laptop laptop = 1;</code>
      * @return Whether the laptop field is set.
      */
     public boolean hasLaptop() {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+     * <code>.pb.Laptop laptop = 1;</code>
      * @return The laptop.
      */
     public com.gitlab.techschool.pcbook.pb.Laptop getLaptop() {
@@ -427,7 +427,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+     * <code>.pb.Laptop laptop = 1;</code>
      */
     public Builder setLaptop(com.gitlab.techschool.pcbook.pb.Laptop value) {
       if (laptopBuilder_ == null) {
@@ -443,7 +443,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+     * <code>.pb.Laptop laptop = 1;</code>
      */
     public Builder setLaptop(
         com.gitlab.techschool.pcbook.pb.Laptop.Builder builderForValue) {
@@ -457,7 +457,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+     * <code>.pb.Laptop laptop = 1;</code>
      */
     public Builder mergeLaptop(com.gitlab.techschool.pcbook.pb.Laptop value) {
       if (laptopBuilder_ == null) {
@@ -476,7 +476,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+     * <code>.pb.Laptop laptop = 1;</code>
      */
     public Builder clearLaptop() {
       bitField0_ = (bitField0_ & ~0x00000001);
@@ -489,7 +489,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+     * <code>.pb.Laptop laptop = 1;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Laptop.Builder getLaptopBuilder() {
       bitField0_ |= 0x00000001;
@@ -497,7 +497,7 @@ private static final long serialVersionUID = 0L;
       return getLaptopFieldBuilder().getBuilder();
     }
     /**
-     * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+     * <code>.pb.Laptop laptop = 1;</code>
      */
     public com.gitlab.techschool.pcbook.pb.LaptopOrBuilder getLaptopOrBuilder() {
       if (laptopBuilder_ != null) {
@@ -508,7 +508,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+     * <code>.pb.Laptop laptop = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Laptop, com.gitlab.techschool.pcbook.pb.Laptop.Builder, com.gitlab.techschool.pcbook.pb.LaptopOrBuilder> 
@@ -536,10 +536,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:techschool.pcbook.CreateLaptopRequest)
+    // @@protoc_insertion_point(builder_scope:pb.CreateLaptopRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:techschool.pcbook.CreateLaptopRequest)
+  // @@protoc_insertion_point(class_scope:pb.CreateLaptopRequest)
   private static final com.gitlab.techschool.pcbook.pb.CreateLaptopRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.gitlab.techschool.pcbook.pb.CreateLaptopRequest();

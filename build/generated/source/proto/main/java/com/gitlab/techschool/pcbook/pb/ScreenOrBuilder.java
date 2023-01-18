@@ -4,7 +4,7 @@
 package com.gitlab.techschool.pcbook.pb;
 
 public interface ScreenOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:techschool.pcbook.Screen)
+    // @@protoc_insertion_point(interface_extends:pb.Screen)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -14,27 +14,27 @@ public interface ScreenOrBuilder extends
   float getSizeInch();
 
   /**
-   * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+   * <code>.pb.Screen.Resolution resolution = 2;</code>
    * @return Whether the resolution field is set.
    */
   boolean hasResolution();
   /**
-   * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+   * <code>.pb.Screen.Resolution resolution = 2;</code>
    * @return The resolution.
    */
   com.gitlab.techschool.pcbook.pb.Screen.Resolution getResolution();
   /**
-   * <code>.techschool.pcbook.Screen.Resolution resolution = 2;</code>
+   * <code>.pb.Screen.Resolution resolution = 2;</code>
    */
   com.gitlab.techschool.pcbook.pb.Screen.ResolutionOrBuilder getResolutionOrBuilder();
 
   /**
-   * <code>.techschool.pcbook.Screen.Panel panel = 3;</code>
+   * <code>.pb.Screen.Panel panel = 3;</code>
    * @return The enum numeric value on the wire for panel.
    */
   int getPanelValue();
   /**
-   * <code>.techschool.pcbook.Screen.Panel panel = 3;</code>
+   * <code>.pb.Screen.Panel panel = 3;</code>
    * @return The panel.
    */
   com.gitlab.techschool.pcbook.pb.Screen.Panel getPanel();

@@ -4,7 +4,7 @@
 package com.gitlab.techschool.pcbook.pb;
 
 public interface GPUOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:techschool.pcbook.GPU)
+    // @@protoc_insertion_point(interface_extends:pb.GPU)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -44,17 +44,17 @@ public interface GPUOrBuilder extends
   double getMaxGhz();
 
   /**
-   * <code>.techschool.pcbook.Memory memory = 5;</code>
+   * <code>.pb.Memory memory = 5;</code>
    * @return Whether the memory field is set.
    */
   boolean hasMemory();
   /**
-   * <code>.techschool.pcbook.Memory memory = 5;</code>
+   * <code>.pb.Memory memory = 5;</code>
    * @return The memory.
    */
   com.gitlab.techschool.pcbook.pb.Memory getMemory();
   /**
-   * <code>.techschool.pcbook.Memory memory = 5;</code>
+   * <code>.pb.Memory memory = 5;</code>
    */
   com.gitlab.techschool.pcbook.pb.MemoryOrBuilder getMemoryOrBuilder();
 }

@@ -4,7 +4,7 @@
 package com.gitlab.techschool.pcbook.pb;
 
 public interface CreateLaptopResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:techschool.pcbook.CreateLaptopResponse)
+    // @@protoc_insertion_point(interface_extends:pb.CreateLaptopResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**

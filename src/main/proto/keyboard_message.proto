@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package techschool.pcbook;
+package pb;
 
 option go_package          = "github.com/TranQuocToan1996/pb";
 option java_package        = "com.gitlab.techschool.pcbook.pb";

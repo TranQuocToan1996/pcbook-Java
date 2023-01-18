@@ -4,11 +4,11 @@
 package com.gitlab.techschool.pcbook.pb;
 
 /**
- * Protobuf type {@code techschool.pcbook.Memory}
+ * Protobuf type {@code pb.Memory}
  */
 public final class Memory extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:techschool.pcbook.Memory)
+    // @@protoc_insertion_point(message_implements:pb.Memory)
     MemoryOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use Memory.newBuilder() to construct.
@@ -33,19 +33,19 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.gitlab.techschool.pcbook.pb.MemoryMessage.internal_static_techschool_pcbook_Memory_descriptor;
+    return com.gitlab.techschool.pcbook.pb.MemoryMessage.internal_static_pb_Memory_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.gitlab.techschool.pcbook.pb.MemoryMessage.internal_static_techschool_pcbook_Memory_fieldAccessorTable
+    return com.gitlab.techschool.pcbook.pb.MemoryMessage.internal_static_pb_Memory_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.gitlab.techschool.pcbook.pb.Memory.class, com.gitlab.techschool.pcbook.pb.Memory.Builder.class);
   }
 
   /**
-   * Protobuf enum {@code techschool.pcbook.Memory.Unit}
+   * Protobuf enum {@code pb.Memory.Unit}
    */
   public enum Unit
       implements com.google.protobuf.ProtocolMessageEnum {
@@ -194,7 +194,7 @@ private static final long serialVersionUID = 0L;
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:techschool.pcbook.Memory.Unit)
+    // @@protoc_insertion_point(enum_scope:pb.Memory.Unit)
   }
 
   public static final int VALUE_FIELD_NUMBER = 1;
@@ -211,14 +211,14 @@ private static final long serialVersionUID = 0L;
   public static final int UNIT_FIELD_NUMBER = 2;
   private int unit_ = 0;
   /**
-   * <code>.techschool.pcbook.Memory.Unit unit = 2;</code>
+   * <code>.pb.Memory.Unit unit = 2;</code>
    * @return The enum numeric value on the wire for unit.
    */
   @java.lang.Override public int getUnitValue() {
     return unit_;
   }
   /**
-   * <code>.techschool.pcbook.Memory.Unit unit = 2;</code>
+   * <code>.pb.Memory.Unit unit = 2;</code>
    * @return The unit.
    */
   @java.lang.Override public com.gitlab.techschool.pcbook.pb.Memory.Unit getUnit() {
@@ -393,21 +393,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code techschool.pcbook.Memory}
+   * Protobuf type {@code pb.Memory}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:techschool.pcbook.Memory)
+      // @@protoc_insertion_point(builder_implements:pb.Memory)
       com.gitlab.techschool.pcbook.pb.MemoryOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gitlab.techschool.pcbook.pb.MemoryMessage.internal_static_techschool_pcbook_Memory_descriptor;
+      return com.gitlab.techschool.pcbook.pb.MemoryMessage.internal_static_pb_Memory_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gitlab.techschool.pcbook.pb.MemoryMessage.internal_static_techschool_pcbook_Memory_fieldAccessorTable
+      return com.gitlab.techschool.pcbook.pb.MemoryMessage.internal_static_pb_Memory_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.gitlab.techschool.pcbook.pb.Memory.class, com.gitlab.techschool.pcbook.pb.Memory.Builder.class);
     }
@@ -434,7 +434,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.gitlab.techschool.pcbook.pb.MemoryMessage.internal_static_techschool_pcbook_Memory_descriptor;
+      return com.gitlab.techschool.pcbook.pb.MemoryMessage.internal_static_pb_Memory_descriptor;
     }
 
     @java.lang.Override
@@ -606,14 +606,14 @@ private static final long serialVersionUID = 0L;
 
     private int unit_ = 0;
     /**
-     * <code>.techschool.pcbook.Memory.Unit unit = 2;</code>
+     * <code>.pb.Memory.Unit unit = 2;</code>
      * @return The enum numeric value on the wire for unit.
      */
     @java.lang.Override public int getUnitValue() {
       return unit_;
     }
     /**
-     * <code>.techschool.pcbook.Memory.Unit unit = 2;</code>
+     * <code>.pb.Memory.Unit unit = 2;</code>
      * @param value The enum numeric value on the wire for unit to set.
      * @return This builder for chaining.
      */
@@ -624,7 +624,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory.Unit unit = 2;</code>
+     * <code>.pb.Memory.Unit unit = 2;</code>
      * @return The unit.
      */
     @java.lang.Override
@@ -633,7 +633,7 @@ private static final long serialVersionUID = 0L;
       return result == null ? com.gitlab.techschool.pcbook.pb.Memory.Unit.UNRECOGNIZED : result;
     }
     /**
-     * <code>.techschool.pcbook.Memory.Unit unit = 2;</code>
+     * <code>.pb.Memory.Unit unit = 2;</code>
      * @param value The unit to set.
      * @return This builder for chaining.
      */
@@ -647,7 +647,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory.Unit unit = 2;</code>
+     * <code>.pb.Memory.Unit unit = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearUnit() {
@@ -669,10 +669,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:techschool.pcbook.Memory)
+    // @@protoc_insertion_point(builder_scope:pb.Memory)
   }
 
-  // @@protoc_insertion_point(class_scope:techschool.pcbook.Memory)
+  // @@protoc_insertion_point(class_scope:pb.Memory)
   private static final com.gitlab.techschool.pcbook.pb.Memory DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.gitlab.techschool.pcbook.pb.Memory();

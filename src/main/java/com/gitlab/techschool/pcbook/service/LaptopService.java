@@ -38,26 +38,17 @@ public class LaptopService extends LaptopServiceGrpc.LaptopServiceImplBase {
                 responseObserver.onError(
                         Status.INVALID_ARGUMENT
                                 .withDescription(e.getMessage())
-                                .asRuntimeException()
-                );
+                                .asRuntimeException());
                 return;
             }
         }
-
-//        // heavy processing
-//        try {
-//            TimeUnit.SECONDS.sleep(6);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
 
         if (Context.current().isCancelled()) {
             logger.info("request is cancelled");
             responseObserver.onError(
                     Status.CANCELLED
                             .withDescription("request is cancelled")
-                            .asRuntimeException()
-            );
+                            .asRuntimeException());
             return;
         }
 
@@ -68,15 +59,13 @@ public class LaptopService extends LaptopServiceGrpc.LaptopServiceImplBase {
             responseObserver.onError(
                     Status.ALREADY_EXISTS
                             .withDescription(e.getMessage())
-                            .asRuntimeException()
-            );
+                            .asRuntimeException());
             return;
         } catch (Exception e) {
             responseObserver.onError(
                     Status.INTERNAL
                             .withDescription(e.getMessage())
-                            .asRuntimeException()
-            );
+                            .asRuntimeException());
             return;
         }
 

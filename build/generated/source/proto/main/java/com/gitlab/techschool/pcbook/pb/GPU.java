@@ -4,11 +4,11 @@
 package com.gitlab.techschool.pcbook.pb;
 
 /**
- * Protobuf type {@code techschool.pcbook.GPU}
+ * Protobuf type {@code pb.GPU}
  */
 public final class GPU extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:techschool.pcbook.GPU)
+    // @@protoc_insertion_point(message_implements:pb.GPU)
     GPUOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use GPU.newBuilder() to construct.
@@ -34,13 +34,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_techschool_pcbook_GPU_descriptor;
+    return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_pb_GPU_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_techschool_pcbook_GPU_fieldAccessorTable
+    return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_pb_GPU_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.gitlab.techschool.pcbook.pb.GPU.class, com.gitlab.techschool.pcbook.pb.GPU.Builder.class);
   }
@@ -148,7 +148,7 @@ private static final long serialVersionUID = 0L;
   public static final int MEMORY_FIELD_NUMBER = 5;
   private com.gitlab.techschool.pcbook.pb.Memory memory_;
   /**
-   * <code>.techschool.pcbook.Memory memory = 5;</code>
+   * <code>.pb.Memory memory = 5;</code>
    * @return Whether the memory field is set.
    */
   @java.lang.Override
@@ -156,7 +156,7 @@ private static final long serialVersionUID = 0L;
     return memory_ != null;
   }
   /**
-   * <code>.techschool.pcbook.Memory memory = 5;</code>
+   * <code>.pb.Memory memory = 5;</code>
    * @return The memory.
    */
   @java.lang.Override
@@ -164,7 +164,7 @@ private static final long serialVersionUID = 0L;
     return memory_ == null ? com.gitlab.techschool.pcbook.pb.Memory.getDefaultInstance() : memory_;
   }
   /**
-   * <code>.techschool.pcbook.Memory memory = 5;</code>
+   * <code>.pb.Memory memory = 5;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.MemoryOrBuilder getMemoryOrBuilder() {
@@ -378,21 +378,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code techschool.pcbook.GPU}
+   * Protobuf type {@code pb.GPU}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:techschool.pcbook.GPU)
+      // @@protoc_insertion_point(builder_implements:pb.GPU)
       com.gitlab.techschool.pcbook.pb.GPUOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_techschool_pcbook_GPU_descriptor;
+      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_pb_GPU_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_techschool_pcbook_GPU_fieldAccessorTable
+      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_pb_GPU_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.gitlab.techschool.pcbook.pb.GPU.class, com.gitlab.techschool.pcbook.pb.GPU.Builder.class);
     }
@@ -426,7 +426,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_techschool_pcbook_GPU_descriptor;
+      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_pb_GPU_descriptor;
     }
 
     @java.lang.Override
@@ -817,14 +817,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Memory, com.gitlab.techschool.pcbook.pb.Memory.Builder, com.gitlab.techschool.pcbook.pb.MemoryOrBuilder> memoryBuilder_;
     /**
-     * <code>.techschool.pcbook.Memory memory = 5;</code>
+     * <code>.pb.Memory memory = 5;</code>
      * @return Whether the memory field is set.
      */
     public boolean hasMemory() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 5;</code>
+     * <code>.pb.Memory memory = 5;</code>
      * @return The memory.
      */
     public com.gitlab.techschool.pcbook.pb.Memory getMemory() {
@@ -835,7 +835,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 5;</code>
+     * <code>.pb.Memory memory = 5;</code>
      */
     public Builder setMemory(com.gitlab.techschool.pcbook.pb.Memory value) {
       if (memoryBuilder_ == null) {
@@ -851,7 +851,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 5;</code>
+     * <code>.pb.Memory memory = 5;</code>
      */
     public Builder setMemory(
         com.gitlab.techschool.pcbook.pb.Memory.Builder builderForValue) {
@@ -865,7 +865,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 5;</code>
+     * <code>.pb.Memory memory = 5;</code>
      */
     public Builder mergeMemory(com.gitlab.techschool.pcbook.pb.Memory value) {
       if (memoryBuilder_ == null) {
@@ -884,7 +884,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 5;</code>
+     * <code>.pb.Memory memory = 5;</code>
      */
     public Builder clearMemory() {
       bitField0_ = (bitField0_ & ~0x00000010);
@@ -897,7 +897,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 5;</code>
+     * <code>.pb.Memory memory = 5;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Memory.Builder getMemoryBuilder() {
       bitField0_ |= 0x00000010;
@@ -905,7 +905,7 @@ private static final long serialVersionUID = 0L;
       return getMemoryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 5;</code>
+     * <code>.pb.Memory memory = 5;</code>
      */
     public com.gitlab.techschool.pcbook.pb.MemoryOrBuilder getMemoryOrBuilder() {
       if (memoryBuilder_ != null) {
@@ -916,7 +916,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 5;</code>
+     * <code>.pb.Memory memory = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Memory, com.gitlab.techschool.pcbook.pb.Memory.Builder, com.gitlab.techschool.pcbook.pb.MemoryOrBuilder> 
@@ -944,10 +944,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:techschool.pcbook.GPU)
+    // @@protoc_insertion_point(builder_scope:pb.GPU)
   }
 
-  // @@protoc_insertion_point(class_scope:techschool.pcbook.GPU)
+  // @@protoc_insertion_point(class_scope:pb.GPU)
   private static final com.gitlab.techschool.pcbook.pb.GPU DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.gitlab.techschool.pcbook.pb.GPU();

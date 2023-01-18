@@ -4,21 +4,21 @@
 package com.gitlab.techschool.pcbook.pb;
 
 public interface CreateLaptopRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:techschool.pcbook.CreateLaptopRequest)
+    // @@protoc_insertion_point(interface_extends:pb.CreateLaptopRequest)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+   * <code>.pb.Laptop laptop = 1;</code>
    * @return Whether the laptop field is set.
    */
   boolean hasLaptop();
   /**
-   * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+   * <code>.pb.Laptop laptop = 1;</code>
    * @return The laptop.
    */
   com.gitlab.techschool.pcbook.pb.Laptop getLaptop();
   /**
-   * <code>.techschool.pcbook.Laptop laptop = 1;</code>
+   * <code>.pb.Laptop laptop = 1;</code>
    */
   com.gitlab.techschool.pcbook.pb.LaptopOrBuilder getLaptopOrBuilder();
 }

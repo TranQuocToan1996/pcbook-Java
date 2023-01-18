@@ -4,11 +4,11 @@
 package com.gitlab.techschool.pcbook.pb;
 
 /**
- * Protobuf type {@code techschool.pcbook.Storage}
+ * Protobuf type {@code pb.Storage}
  */
 public final class Storage extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:techschool.pcbook.Storage)
+    // @@protoc_insertion_point(message_implements:pb.Storage)
     StorageOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use Storage.newBuilder() to construct.
@@ -33,19 +33,19 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.gitlab.techschool.pcbook.pb.StorageMessage.internal_static_techschool_pcbook_Storage_descriptor;
+    return com.gitlab.techschool.pcbook.pb.StorageMessage.internal_static_pb_Storage_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.gitlab.techschool.pcbook.pb.StorageMessage.internal_static_techschool_pcbook_Storage_fieldAccessorTable
+    return com.gitlab.techschool.pcbook.pb.StorageMessage.internal_static_pb_Storage_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.gitlab.techschool.pcbook.pb.Storage.class, com.gitlab.techschool.pcbook.pb.Storage.Builder.class);
   }
 
   /**
-   * Protobuf enum {@code techschool.pcbook.Storage.Driver}
+   * Protobuf enum {@code pb.Storage.Driver}
    */
   public enum Driver
       implements com.google.protobuf.ProtocolMessageEnum {
@@ -158,20 +158,20 @@ private static final long serialVersionUID = 0L;
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:techschool.pcbook.Storage.Driver)
+    // @@protoc_insertion_point(enum_scope:pb.Storage.Driver)
   }
 
   public static final int DRIVER_FIELD_NUMBER = 1;
   private int driver_ = 0;
   /**
-   * <code>.techschool.pcbook.Storage.Driver driver = 1;</code>
+   * <code>.pb.Storage.Driver driver = 1;</code>
    * @return The enum numeric value on the wire for driver.
    */
   @java.lang.Override public int getDriverValue() {
     return driver_;
   }
   /**
-   * <code>.techschool.pcbook.Storage.Driver driver = 1;</code>
+   * <code>.pb.Storage.Driver driver = 1;</code>
    * @return The driver.
    */
   @java.lang.Override public com.gitlab.techschool.pcbook.pb.Storage.Driver getDriver() {
@@ -182,7 +182,7 @@ private static final long serialVersionUID = 0L;
   public static final int MEMORY_FIELD_NUMBER = 2;
   private com.gitlab.techschool.pcbook.pb.Memory memory_;
   /**
-   * <code>.techschool.pcbook.Memory memory = 2;</code>
+   * <code>.pb.Memory memory = 2;</code>
    * @return Whether the memory field is set.
    */
   @java.lang.Override
@@ -190,7 +190,7 @@ private static final long serialVersionUID = 0L;
     return memory_ != null;
   }
   /**
-   * <code>.techschool.pcbook.Memory memory = 2;</code>
+   * <code>.pb.Memory memory = 2;</code>
    * @return The memory.
    */
   @java.lang.Override
@@ -198,7 +198,7 @@ private static final long serialVersionUID = 0L;
     return memory_ == null ? com.gitlab.techschool.pcbook.pb.Memory.getDefaultInstance() : memory_;
   }
   /**
-   * <code>.techschool.pcbook.Memory memory = 2;</code>
+   * <code>.pb.Memory memory = 2;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.MemoryOrBuilder getMemoryOrBuilder() {
@@ -376,21 +376,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code techschool.pcbook.Storage}
+   * Protobuf type {@code pb.Storage}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:techschool.pcbook.Storage)
+      // @@protoc_insertion_point(builder_implements:pb.Storage)
       com.gitlab.techschool.pcbook.pb.StorageOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gitlab.techschool.pcbook.pb.StorageMessage.internal_static_techschool_pcbook_Storage_descriptor;
+      return com.gitlab.techschool.pcbook.pb.StorageMessage.internal_static_pb_Storage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gitlab.techschool.pcbook.pb.StorageMessage.internal_static_techschool_pcbook_Storage_fieldAccessorTable
+      return com.gitlab.techschool.pcbook.pb.StorageMessage.internal_static_pb_Storage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.gitlab.techschool.pcbook.pb.Storage.class, com.gitlab.techschool.pcbook.pb.Storage.Builder.class);
     }
@@ -421,7 +421,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.gitlab.techschool.pcbook.pb.StorageMessage.internal_static_techschool_pcbook_Storage_descriptor;
+      return com.gitlab.techschool.pcbook.pb.StorageMessage.internal_static_pb_Storage_descriptor;
     }
 
     @java.lang.Override
@@ -565,14 +565,14 @@ private static final long serialVersionUID = 0L;
 
     private int driver_ = 0;
     /**
-     * <code>.techschool.pcbook.Storage.Driver driver = 1;</code>
+     * <code>.pb.Storage.Driver driver = 1;</code>
      * @return The enum numeric value on the wire for driver.
      */
     @java.lang.Override public int getDriverValue() {
       return driver_;
     }
     /**
-     * <code>.techschool.pcbook.Storage.Driver driver = 1;</code>
+     * <code>.pb.Storage.Driver driver = 1;</code>
      * @param value The enum numeric value on the wire for driver to set.
      * @return This builder for chaining.
      */
@@ -583,7 +583,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Storage.Driver driver = 1;</code>
+     * <code>.pb.Storage.Driver driver = 1;</code>
      * @return The driver.
      */
     @java.lang.Override
@@ -592,7 +592,7 @@ private static final long serialVersionUID = 0L;
       return result == null ? com.gitlab.techschool.pcbook.pb.Storage.Driver.UNRECOGNIZED : result;
     }
     /**
-     * <code>.techschool.pcbook.Storage.Driver driver = 1;</code>
+     * <code>.pb.Storage.Driver driver = 1;</code>
      * @param value The driver to set.
      * @return This builder for chaining.
      */
@@ -606,7 +606,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Storage.Driver driver = 1;</code>
+     * <code>.pb.Storage.Driver driver = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearDriver() {
@@ -620,14 +620,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Memory, com.gitlab.techschool.pcbook.pb.Memory.Builder, com.gitlab.techschool.pcbook.pb.MemoryOrBuilder> memoryBuilder_;
     /**
-     * <code>.techschool.pcbook.Memory memory = 2;</code>
+     * <code>.pb.Memory memory = 2;</code>
      * @return Whether the memory field is set.
      */
     public boolean hasMemory() {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 2;</code>
+     * <code>.pb.Memory memory = 2;</code>
      * @return The memory.
      */
     public com.gitlab.techschool.pcbook.pb.Memory getMemory() {
@@ -638,7 +638,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 2;</code>
+     * <code>.pb.Memory memory = 2;</code>
      */
     public Builder setMemory(com.gitlab.techschool.pcbook.pb.Memory value) {
       if (memoryBuilder_ == null) {
@@ -654,7 +654,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 2;</code>
+     * <code>.pb.Memory memory = 2;</code>
      */
     public Builder setMemory(
         com.gitlab.techschool.pcbook.pb.Memory.Builder builderForValue) {
@@ -668,7 +668,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 2;</code>
+     * <code>.pb.Memory memory = 2;</code>
      */
     public Builder mergeMemory(com.gitlab.techschool.pcbook.pb.Memory value) {
       if (memoryBuilder_ == null) {
@@ -687,7 +687,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 2;</code>
+     * <code>.pb.Memory memory = 2;</code>
      */
     public Builder clearMemory() {
       bitField0_ = (bitField0_ & ~0x00000002);
@@ -700,7 +700,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 2;</code>
+     * <code>.pb.Memory memory = 2;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Memory.Builder getMemoryBuilder() {
       bitField0_ |= 0x00000002;
@@ -708,7 +708,7 @@ private static final long serialVersionUID = 0L;
       return getMemoryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 2;</code>
+     * <code>.pb.Memory memory = 2;</code>
      */
     public com.gitlab.techschool.pcbook.pb.MemoryOrBuilder getMemoryOrBuilder() {
       if (memoryBuilder_ != null) {
@@ -719,7 +719,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Memory memory = 2;</code>
+     * <code>.pb.Memory memory = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Memory, com.gitlab.techschool.pcbook.pb.Memory.Builder, com.gitlab.techschool.pcbook.pb.MemoryOrBuilder> 
@@ -747,10 +747,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:techschool.pcbook.Storage)
+    // @@protoc_insertion_point(builder_scope:pb.Storage)
   }
 
-  // @@protoc_insertion_point(class_scope:techschool.pcbook.Storage)
+  // @@protoc_insertion_point(class_scope:pb.Storage)
   private static final com.gitlab.techschool.pcbook.pb.Storage DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.gitlab.techschool.pcbook.pb.Storage();

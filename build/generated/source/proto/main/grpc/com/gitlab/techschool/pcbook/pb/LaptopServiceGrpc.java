@@ -12,7 +12,7 @@ public final class LaptopServiceGrpc {
 
   private LaptopServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "techschool.pcbook.LaptopService";
+  public static final String SERVICE_NAME = "pb.LaptopService";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<com.gitlab.techschool.pcbook.pb.CreateLaptopRequest,

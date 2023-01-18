@@ -4,11 +4,11 @@
 package com.gitlab.techschool.pcbook.pb;
 
 /**
- * Protobuf type {@code techschool.pcbook.Laptop}
+ * Protobuf type {@code pb.Laptop}
  */
 public final class Laptop extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:techschool.pcbook.Laptop)
+    // @@protoc_insertion_point(message_implements:pb.Laptop)
     LaptopOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use Laptop.newBuilder() to construct.
@@ -37,13 +37,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.gitlab.techschool.pcbook.pb.LaptopMessage.internal_static_techschool_pcbook_Laptop_descriptor;
+    return com.gitlab.techschool.pcbook.pb.LaptopMessage.internal_static_pb_Laptop_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.gitlab.techschool.pcbook.pb.LaptopMessage.internal_static_techschool_pcbook_Laptop_fieldAccessorTable
+    return com.gitlab.techschool.pcbook.pb.LaptopMessage.internal_static_pb_Laptop_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.gitlab.techschool.pcbook.pb.Laptop.class, com.gitlab.techschool.pcbook.pb.Laptop.Builder.class);
   }
@@ -209,7 +209,7 @@ private static final long serialVersionUID = 0L;
   public static final int CPU_FIELD_NUMBER = 4;
   private com.gitlab.techschool.pcbook.pb.CPU cpu_;
   /**
-   * <code>.techschool.pcbook.CPU cpu = 4;</code>
+   * <code>.pb.CPU cpu = 4;</code>
    * @return Whether the cpu field is set.
    */
   @java.lang.Override
@@ -217,7 +217,7 @@ private static final long serialVersionUID = 0L;
     return cpu_ != null;
   }
   /**
-   * <code>.techschool.pcbook.CPU cpu = 4;</code>
+   * <code>.pb.CPU cpu = 4;</code>
    * @return The cpu.
    */
   @java.lang.Override
@@ -225,7 +225,7 @@ private static final long serialVersionUID = 0L;
     return cpu_ == null ? com.gitlab.techschool.pcbook.pb.CPU.getDefaultInstance() : cpu_;
   }
   /**
-   * <code>.techschool.pcbook.CPU cpu = 4;</code>
+   * <code>.pb.CPU cpu = 4;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.CPUOrBuilder getCpuOrBuilder() {
@@ -235,7 +235,7 @@ private static final long serialVersionUID = 0L;
   public static final int RAM_FIELD_NUMBER = 5;
   private com.gitlab.techschool.pcbook.pb.Memory ram_;
   /**
-   * <code>.techschool.pcbook.Memory ram = 5;</code>
+   * <code>.pb.Memory ram = 5;</code>
    * @return Whether the ram field is set.
    */
   @java.lang.Override
@@ -243,7 +243,7 @@ private static final long serialVersionUID = 0L;
     return ram_ != null;
   }
   /**
-   * <code>.techschool.pcbook.Memory ram = 5;</code>
+   * <code>.pb.Memory ram = 5;</code>
    * @return The ram.
    */
   @java.lang.Override
@@ -251,7 +251,7 @@ private static final long serialVersionUID = 0L;
     return ram_ == null ? com.gitlab.techschool.pcbook.pb.Memory.getDefaultInstance() : ram_;
   }
   /**
-   * <code>.techschool.pcbook.Memory ram = 5;</code>
+   * <code>.pb.Memory ram = 5;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.MemoryOrBuilder getRamOrBuilder() {
@@ -262,14 +262,14 @@ private static final long serialVersionUID = 0L;
   @SuppressWarnings("serial")
   private java.util.List<com.gitlab.techschool.pcbook.pb.GPU> gpus_;
   /**
-   * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+   * <code>repeated .pb.GPU gpus = 6;</code>
    */
   @java.lang.Override
   public java.util.List<com.gitlab.techschool.pcbook.pb.GPU> getGpusList() {
     return gpus_;
   }
   /**
-   * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+   * <code>repeated .pb.GPU gpus = 6;</code>
    */
   @java.lang.Override
   public java.util.List<? extends com.gitlab.techschool.pcbook.pb.GPUOrBuilder> 
@@ -277,21 +277,21 @@ private static final long serialVersionUID = 0L;
     return gpus_;
   }
   /**
-   * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+   * <code>repeated .pb.GPU gpus = 6;</code>
    */
   @java.lang.Override
   public int getGpusCount() {
     return gpus_.size();
   }
   /**
-   * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+   * <code>repeated .pb.GPU gpus = 6;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.GPU getGpus(int index) {
     return gpus_.get(index);
   }
   /**
-   * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+   * <code>repeated .pb.GPU gpus = 6;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.GPUOrBuilder getGpusOrBuilder(
@@ -303,14 +303,14 @@ private static final long serialVersionUID = 0L;
   @SuppressWarnings("serial")
   private java.util.List<com.gitlab.techschool.pcbook.pb.Storage> storages_;
   /**
-   * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+   * <code>repeated .pb.Storage storages = 7;</code>
    */
   @java.lang.Override
   public java.util.List<com.gitlab.techschool.pcbook.pb.Storage> getStoragesList() {
     return storages_;
   }
   /**
-   * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+   * <code>repeated .pb.Storage storages = 7;</code>
    */
   @java.lang.Override
   public java.util.List<? extends com.gitlab.techschool.pcbook.pb.StorageOrBuilder> 
@@ -318,21 +318,21 @@ private static final long serialVersionUID = 0L;
     return storages_;
   }
   /**
-   * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+   * <code>repeated .pb.Storage storages = 7;</code>
    */
   @java.lang.Override
   public int getStoragesCount() {
     return storages_.size();
   }
   /**
-   * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+   * <code>repeated .pb.Storage storages = 7;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.Storage getStorages(int index) {
     return storages_.get(index);
   }
   /**
-   * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+   * <code>repeated .pb.Storage storages = 7;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.StorageOrBuilder getStoragesOrBuilder(
@@ -343,7 +343,7 @@ private static final long serialVersionUID = 0L;
   public static final int SCREEN_FIELD_NUMBER = 8;
   private com.gitlab.techschool.pcbook.pb.Screen screen_;
   /**
-   * <code>.techschool.pcbook.Screen screen = 8;</code>
+   * <code>.pb.Screen screen = 8;</code>
    * @return Whether the screen field is set.
    */
   @java.lang.Override
@@ -351,7 +351,7 @@ private static final long serialVersionUID = 0L;
     return screen_ != null;
   }
   /**
-   * <code>.techschool.pcbook.Screen screen = 8;</code>
+   * <code>.pb.Screen screen = 8;</code>
    * @return The screen.
    */
   @java.lang.Override
@@ -359,7 +359,7 @@ private static final long serialVersionUID = 0L;
     return screen_ == null ? com.gitlab.techschool.pcbook.pb.Screen.getDefaultInstance() : screen_;
   }
   /**
-   * <code>.techschool.pcbook.Screen screen = 8;</code>
+   * <code>.pb.Screen screen = 8;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.ScreenOrBuilder getScreenOrBuilder() {
@@ -369,7 +369,7 @@ private static final long serialVersionUID = 0L;
   public static final int KEYBOARD_FIELD_NUMBER = 9;
   private com.gitlab.techschool.pcbook.pb.Keyboard keyboard_;
   /**
-   * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+   * <code>.pb.Keyboard keyboard = 9;</code>
    * @return Whether the keyboard field is set.
    */
   @java.lang.Override
@@ -377,7 +377,7 @@ private static final long serialVersionUID = 0L;
     return keyboard_ != null;
   }
   /**
-   * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+   * <code>.pb.Keyboard keyboard = 9;</code>
    * @return The keyboard.
    */
   @java.lang.Override
@@ -385,7 +385,7 @@ private static final long serialVersionUID = 0L;
     return keyboard_ == null ? com.gitlab.techschool.pcbook.pb.Keyboard.getDefaultInstance() : keyboard_;
   }
   /**
-   * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+   * <code>.pb.Keyboard keyboard = 9;</code>
    */
   @java.lang.Override
   public com.gitlab.techschool.pcbook.pb.KeyboardOrBuilder getKeyboardOrBuilder() {
@@ -834,21 +834,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code techschool.pcbook.Laptop}
+   * Protobuf type {@code pb.Laptop}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:techschool.pcbook.Laptop)
+      // @@protoc_insertion_point(builder_implements:pb.Laptop)
       com.gitlab.techschool.pcbook.pb.LaptopOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gitlab.techschool.pcbook.pb.LaptopMessage.internal_static_techschool_pcbook_Laptop_descriptor;
+      return com.gitlab.techschool.pcbook.pb.LaptopMessage.internal_static_pb_Laptop_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gitlab.techschool.pcbook.pb.LaptopMessage.internal_static_techschool_pcbook_Laptop_fieldAccessorTable
+      return com.gitlab.techschool.pcbook.pb.LaptopMessage.internal_static_pb_Laptop_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.gitlab.techschool.pcbook.pb.Laptop.class, com.gitlab.techschool.pcbook.pb.Laptop.Builder.class);
     }
@@ -919,7 +919,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.gitlab.techschool.pcbook.pb.LaptopMessage.internal_static_techschool_pcbook_Laptop_descriptor;
+      return com.gitlab.techschool.pcbook.pb.LaptopMessage.internal_static_pb_Laptop_descriptor;
     }
 
     @java.lang.Override
@@ -1535,14 +1535,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.CPU, com.gitlab.techschool.pcbook.pb.CPU.Builder, com.gitlab.techschool.pcbook.pb.CPUOrBuilder> cpuBuilder_;
     /**
-     * <code>.techschool.pcbook.CPU cpu = 4;</code>
+     * <code>.pb.CPU cpu = 4;</code>
      * @return Whether the cpu field is set.
      */
     public boolean hasCpu() {
       return ((bitField0_ & 0x00000008) != 0);
     }
     /**
-     * <code>.techschool.pcbook.CPU cpu = 4;</code>
+     * <code>.pb.CPU cpu = 4;</code>
      * @return The cpu.
      */
     public com.gitlab.techschool.pcbook.pb.CPU getCpu() {
@@ -1553,7 +1553,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.CPU cpu = 4;</code>
+     * <code>.pb.CPU cpu = 4;</code>
      */
     public Builder setCpu(com.gitlab.techschool.pcbook.pb.CPU value) {
       if (cpuBuilder_ == null) {
@@ -1569,7 +1569,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.CPU cpu = 4;</code>
+     * <code>.pb.CPU cpu = 4;</code>
      */
     public Builder setCpu(
         com.gitlab.techschool.pcbook.pb.CPU.Builder builderForValue) {
@@ -1583,7 +1583,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.CPU cpu = 4;</code>
+     * <code>.pb.CPU cpu = 4;</code>
      */
     public Builder mergeCpu(com.gitlab.techschool.pcbook.pb.CPU value) {
       if (cpuBuilder_ == null) {
@@ -1602,7 +1602,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.CPU cpu = 4;</code>
+     * <code>.pb.CPU cpu = 4;</code>
      */
     public Builder clearCpu() {
       bitField0_ = (bitField0_ & ~0x00000008);
@@ -1615,7 +1615,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.CPU cpu = 4;</code>
+     * <code>.pb.CPU cpu = 4;</code>
      */
     public com.gitlab.techschool.pcbook.pb.CPU.Builder getCpuBuilder() {
       bitField0_ |= 0x00000008;
@@ -1623,7 +1623,7 @@ private static final long serialVersionUID = 0L;
       return getCpuFieldBuilder().getBuilder();
     }
     /**
-     * <code>.techschool.pcbook.CPU cpu = 4;</code>
+     * <code>.pb.CPU cpu = 4;</code>
      */
     public com.gitlab.techschool.pcbook.pb.CPUOrBuilder getCpuOrBuilder() {
       if (cpuBuilder_ != null) {
@@ -1634,7 +1634,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.CPU cpu = 4;</code>
+     * <code>.pb.CPU cpu = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.CPU, com.gitlab.techschool.pcbook.pb.CPU.Builder, com.gitlab.techschool.pcbook.pb.CPUOrBuilder> 
@@ -1654,14 +1654,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Memory, com.gitlab.techschool.pcbook.pb.Memory.Builder, com.gitlab.techschool.pcbook.pb.MemoryOrBuilder> ramBuilder_;
     /**
-     * <code>.techschool.pcbook.Memory ram = 5;</code>
+     * <code>.pb.Memory ram = 5;</code>
      * @return Whether the ram field is set.
      */
     public boolean hasRam() {
       return ((bitField0_ & 0x00000010) != 0);
     }
     /**
-     * <code>.techschool.pcbook.Memory ram = 5;</code>
+     * <code>.pb.Memory ram = 5;</code>
      * @return The ram.
      */
     public com.gitlab.techschool.pcbook.pb.Memory getRam() {
@@ -1672,7 +1672,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Memory ram = 5;</code>
+     * <code>.pb.Memory ram = 5;</code>
      */
     public Builder setRam(com.gitlab.techschool.pcbook.pb.Memory value) {
       if (ramBuilder_ == null) {
@@ -1688,7 +1688,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory ram = 5;</code>
+     * <code>.pb.Memory ram = 5;</code>
      */
     public Builder setRam(
         com.gitlab.techschool.pcbook.pb.Memory.Builder builderForValue) {
@@ -1702,7 +1702,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory ram = 5;</code>
+     * <code>.pb.Memory ram = 5;</code>
      */
     public Builder mergeRam(com.gitlab.techschool.pcbook.pb.Memory value) {
       if (ramBuilder_ == null) {
@@ -1721,7 +1721,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory ram = 5;</code>
+     * <code>.pb.Memory ram = 5;</code>
      */
     public Builder clearRam() {
       bitField0_ = (bitField0_ & ~0x00000010);
@@ -1734,7 +1734,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Memory ram = 5;</code>
+     * <code>.pb.Memory ram = 5;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Memory.Builder getRamBuilder() {
       bitField0_ |= 0x00000010;
@@ -1742,7 +1742,7 @@ private static final long serialVersionUID = 0L;
       return getRamFieldBuilder().getBuilder();
     }
     /**
-     * <code>.techschool.pcbook.Memory ram = 5;</code>
+     * <code>.pb.Memory ram = 5;</code>
      */
     public com.gitlab.techschool.pcbook.pb.MemoryOrBuilder getRamOrBuilder() {
       if (ramBuilder_ != null) {
@@ -1753,7 +1753,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Memory ram = 5;</code>
+     * <code>.pb.Memory ram = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Memory, com.gitlab.techschool.pcbook.pb.Memory.Builder, com.gitlab.techschool.pcbook.pb.MemoryOrBuilder> 
@@ -1782,7 +1782,7 @@ private static final long serialVersionUID = 0L;
         com.gitlab.techschool.pcbook.pb.GPU, com.gitlab.techschool.pcbook.pb.GPU.Builder, com.gitlab.techschool.pcbook.pb.GPUOrBuilder> gpusBuilder_;
 
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public java.util.List<com.gitlab.techschool.pcbook.pb.GPU> getGpusList() {
       if (gpusBuilder_ == null) {
@@ -1792,7 +1792,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public int getGpusCount() {
       if (gpusBuilder_ == null) {
@@ -1802,7 +1802,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public com.gitlab.techschool.pcbook.pb.GPU getGpus(int index) {
       if (gpusBuilder_ == null) {
@@ -1812,7 +1812,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public Builder setGpus(
         int index, com.gitlab.techschool.pcbook.pb.GPU value) {
@@ -1829,7 +1829,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public Builder setGpus(
         int index, com.gitlab.techschool.pcbook.pb.GPU.Builder builderForValue) {
@@ -1843,7 +1843,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public Builder addGpus(com.gitlab.techschool.pcbook.pb.GPU value) {
       if (gpusBuilder_ == null) {
@@ -1859,7 +1859,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public Builder addGpus(
         int index, com.gitlab.techschool.pcbook.pb.GPU value) {
@@ -1876,7 +1876,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public Builder addGpus(
         com.gitlab.techschool.pcbook.pb.GPU.Builder builderForValue) {
@@ -1890,7 +1890,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public Builder addGpus(
         int index, com.gitlab.techschool.pcbook.pb.GPU.Builder builderForValue) {
@@ -1904,7 +1904,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public Builder addAllGpus(
         java.lang.Iterable<? extends com.gitlab.techschool.pcbook.pb.GPU> values) {
@@ -1919,7 +1919,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public Builder clearGpus() {
       if (gpusBuilder_ == null) {
@@ -1932,7 +1932,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public Builder removeGpus(int index) {
       if (gpusBuilder_ == null) {
@@ -1945,14 +1945,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public com.gitlab.techschool.pcbook.pb.GPU.Builder getGpusBuilder(
         int index) {
       return getGpusFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public com.gitlab.techschool.pcbook.pb.GPUOrBuilder getGpusOrBuilder(
         int index) {
@@ -1962,7 +1962,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public java.util.List<? extends com.gitlab.techschool.pcbook.pb.GPUOrBuilder> 
          getGpusOrBuilderList() {
@@ -1973,14 +1973,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public com.gitlab.techschool.pcbook.pb.GPU.Builder addGpusBuilder() {
       return getGpusFieldBuilder().addBuilder(
           com.gitlab.techschool.pcbook.pb.GPU.getDefaultInstance());
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public com.gitlab.techschool.pcbook.pb.GPU.Builder addGpusBuilder(
         int index) {
@@ -1988,7 +1988,7 @@ private static final long serialVersionUID = 0L;
           index, com.gitlab.techschool.pcbook.pb.GPU.getDefaultInstance());
     }
     /**
-     * <code>repeated .techschool.pcbook.GPU gpus = 6;</code>
+     * <code>repeated .pb.GPU gpus = 6;</code>
      */
     public java.util.List<com.gitlab.techschool.pcbook.pb.GPU.Builder> 
          getGpusBuilderList() {
@@ -2022,7 +2022,7 @@ private static final long serialVersionUID = 0L;
         com.gitlab.techschool.pcbook.pb.Storage, com.gitlab.techschool.pcbook.pb.Storage.Builder, com.gitlab.techschool.pcbook.pb.StorageOrBuilder> storagesBuilder_;
 
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public java.util.List<com.gitlab.techschool.pcbook.pb.Storage> getStoragesList() {
       if (storagesBuilder_ == null) {
@@ -2032,7 +2032,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public int getStoragesCount() {
       if (storagesBuilder_ == null) {
@@ -2042,7 +2042,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Storage getStorages(int index) {
       if (storagesBuilder_ == null) {
@@ -2052,7 +2052,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public Builder setStorages(
         int index, com.gitlab.techschool.pcbook.pb.Storage value) {
@@ -2069,7 +2069,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public Builder setStorages(
         int index, com.gitlab.techschool.pcbook.pb.Storage.Builder builderForValue) {
@@ -2083,7 +2083,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public Builder addStorages(com.gitlab.techschool.pcbook.pb.Storage value) {
       if (storagesBuilder_ == null) {
@@ -2099,7 +2099,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public Builder addStorages(
         int index, com.gitlab.techschool.pcbook.pb.Storage value) {
@@ -2116,7 +2116,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public Builder addStorages(
         com.gitlab.techschool.pcbook.pb.Storage.Builder builderForValue) {
@@ -2130,7 +2130,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public Builder addStorages(
         int index, com.gitlab.techschool.pcbook.pb.Storage.Builder builderForValue) {
@@ -2144,7 +2144,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public Builder addAllStorages(
         java.lang.Iterable<? extends com.gitlab.techschool.pcbook.pb.Storage> values) {
@@ -2159,7 +2159,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public Builder clearStorages() {
       if (storagesBuilder_ == null) {
@@ -2172,7 +2172,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public Builder removeStorages(int index) {
       if (storagesBuilder_ == null) {
@@ -2185,14 +2185,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Storage.Builder getStoragesBuilder(
         int index) {
       return getStoragesFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public com.gitlab.techschool.pcbook.pb.StorageOrBuilder getStoragesOrBuilder(
         int index) {
@@ -2202,7 +2202,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public java.util.List<? extends com.gitlab.techschool.pcbook.pb.StorageOrBuilder> 
          getStoragesOrBuilderList() {
@@ -2213,14 +2213,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Storage.Builder addStoragesBuilder() {
       return getStoragesFieldBuilder().addBuilder(
           com.gitlab.techschool.pcbook.pb.Storage.getDefaultInstance());
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Storage.Builder addStoragesBuilder(
         int index) {
@@ -2228,7 +2228,7 @@ private static final long serialVersionUID = 0L;
           index, com.gitlab.techschool.pcbook.pb.Storage.getDefaultInstance());
     }
     /**
-     * <code>repeated .techschool.pcbook.Storage storages = 7;</code>
+     * <code>repeated .pb.Storage storages = 7;</code>
      */
     public java.util.List<com.gitlab.techschool.pcbook.pb.Storage.Builder> 
          getStoragesBuilderList() {
@@ -2253,14 +2253,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Screen, com.gitlab.techschool.pcbook.pb.Screen.Builder, com.gitlab.techschool.pcbook.pb.ScreenOrBuilder> screenBuilder_;
     /**
-     * <code>.techschool.pcbook.Screen screen = 8;</code>
+     * <code>.pb.Screen screen = 8;</code>
      * @return Whether the screen field is set.
      */
     public boolean hasScreen() {
       return ((bitField0_ & 0x00000080) != 0);
     }
     /**
-     * <code>.techschool.pcbook.Screen screen = 8;</code>
+     * <code>.pb.Screen screen = 8;</code>
      * @return The screen.
      */
     public com.gitlab.techschool.pcbook.pb.Screen getScreen() {
@@ -2271,7 +2271,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Screen screen = 8;</code>
+     * <code>.pb.Screen screen = 8;</code>
      */
     public Builder setScreen(com.gitlab.techschool.pcbook.pb.Screen value) {
       if (screenBuilder_ == null) {
@@ -2287,7 +2287,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Screen screen = 8;</code>
+     * <code>.pb.Screen screen = 8;</code>
      */
     public Builder setScreen(
         com.gitlab.techschool.pcbook.pb.Screen.Builder builderForValue) {
@@ -2301,7 +2301,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Screen screen = 8;</code>
+     * <code>.pb.Screen screen = 8;</code>
      */
     public Builder mergeScreen(com.gitlab.techschool.pcbook.pb.Screen value) {
       if (screenBuilder_ == null) {
@@ -2320,7 +2320,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Screen screen = 8;</code>
+     * <code>.pb.Screen screen = 8;</code>
      */
     public Builder clearScreen() {
       bitField0_ = (bitField0_ & ~0x00000080);
@@ -2333,7 +2333,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Screen screen = 8;</code>
+     * <code>.pb.Screen screen = 8;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Screen.Builder getScreenBuilder() {
       bitField0_ |= 0x00000080;
@@ -2341,7 +2341,7 @@ private static final long serialVersionUID = 0L;
       return getScreenFieldBuilder().getBuilder();
     }
     /**
-     * <code>.techschool.pcbook.Screen screen = 8;</code>
+     * <code>.pb.Screen screen = 8;</code>
      */
     public com.gitlab.techschool.pcbook.pb.ScreenOrBuilder getScreenOrBuilder() {
       if (screenBuilder_ != null) {
@@ -2352,7 +2352,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Screen screen = 8;</code>
+     * <code>.pb.Screen screen = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Screen, com.gitlab.techschool.pcbook.pb.Screen.Builder, com.gitlab.techschool.pcbook.pb.ScreenOrBuilder> 
@@ -2372,14 +2372,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Keyboard, com.gitlab.techschool.pcbook.pb.Keyboard.Builder, com.gitlab.techschool.pcbook.pb.KeyboardOrBuilder> keyboardBuilder_;
     /**
-     * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+     * <code>.pb.Keyboard keyboard = 9;</code>
      * @return Whether the keyboard field is set.
      */
     public boolean hasKeyboard() {
       return ((bitField0_ & 0x00000100) != 0);
     }
     /**
-     * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+     * <code>.pb.Keyboard keyboard = 9;</code>
      * @return The keyboard.
      */
     public com.gitlab.techschool.pcbook.pb.Keyboard getKeyboard() {
@@ -2390,7 +2390,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+     * <code>.pb.Keyboard keyboard = 9;</code>
      */
     public Builder setKeyboard(com.gitlab.techschool.pcbook.pb.Keyboard value) {
       if (keyboardBuilder_ == null) {
@@ -2406,7 +2406,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+     * <code>.pb.Keyboard keyboard = 9;</code>
      */
     public Builder setKeyboard(
         com.gitlab.techschool.pcbook.pb.Keyboard.Builder builderForValue) {
@@ -2420,7 +2420,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+     * <code>.pb.Keyboard keyboard = 9;</code>
      */
     public Builder mergeKeyboard(com.gitlab.techschool.pcbook.pb.Keyboard value) {
       if (keyboardBuilder_ == null) {
@@ -2439,7 +2439,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+     * <code>.pb.Keyboard keyboard = 9;</code>
      */
     public Builder clearKeyboard() {
       bitField0_ = (bitField0_ & ~0x00000100);
@@ -2452,7 +2452,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+     * <code>.pb.Keyboard keyboard = 9;</code>
      */
     public com.gitlab.techschool.pcbook.pb.Keyboard.Builder getKeyboardBuilder() {
       bitField0_ |= 0x00000100;
@@ -2460,7 +2460,7 @@ private static final long serialVersionUID = 0L;
       return getKeyboardFieldBuilder().getBuilder();
     }
     /**
-     * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+     * <code>.pb.Keyboard keyboard = 9;</code>
      */
     public com.gitlab.techschool.pcbook.pb.KeyboardOrBuilder getKeyboardOrBuilder() {
       if (keyboardBuilder_ != null) {
@@ -2471,7 +2471,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.techschool.pcbook.Keyboard keyboard = 9;</code>
+     * <code>.pb.Keyboard keyboard = 9;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.gitlab.techschool.pcbook.pb.Keyboard, com.gitlab.techschool.pcbook.pb.Keyboard.Builder, com.gitlab.techschool.pcbook.pb.KeyboardOrBuilder> 
@@ -2766,10 +2766,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:techschool.pcbook.Laptop)
+    // @@protoc_insertion_point(builder_scope:pb.Laptop)
   }
 
-  // @@protoc_insertion_point(class_scope:techschool.pcbook.Laptop)
+  // @@protoc_insertion_point(class_scope:pb.Laptop)
   private static final com.gitlab.techschool.pcbook.pb.Laptop DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.gitlab.techschool.pcbook.pb.Laptop();

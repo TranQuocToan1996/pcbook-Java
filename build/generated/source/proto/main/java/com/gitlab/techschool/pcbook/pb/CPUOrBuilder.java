@@ -4,7 +4,7 @@
 package com.gitlab.techschool.pcbook.pb;
 
 public interface CPUOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:techschool.pcbook.CPU)
+    // @@protoc_insertion_point(interface_extends:pb.CPU)
     com.google.protobuf.MessageOrBuilder {
 
   /**

@@ -4,7 +4,7 @@
 package com.gitlab.techschool.pcbook.pb;
 
 public interface MemoryOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:techschool.pcbook.Memory)
+    // @@protoc_insertion_point(interface_extends:pb.Memory)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -14,12 +14,12 @@ public interface MemoryOrBuilder extends
   long getValue();
 
   /**
-   * <code>.techschool.pcbook.Memory.Unit unit = 2;</code>
+   * <code>.pb.Memory.Unit unit = 2;</code>
    * @return The enum numeric value on the wire for unit.
    */
   int getUnitValue();
   /**
-   * <code>.techschool.pcbook.Memory.Unit unit = 2;</code>
+   * <code>.pb.Memory.Unit unit = 2;</code>
    * @return The unit.
    */
   com.gitlab.techschool.pcbook.pb.Memory.Unit getUnit();

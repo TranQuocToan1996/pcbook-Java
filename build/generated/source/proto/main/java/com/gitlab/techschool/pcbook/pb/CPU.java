@@ -4,11 +4,11 @@
 package com.gitlab.techschool.pcbook.pb;
 
 /**
- * Protobuf type {@code techschool.pcbook.CPU}
+ * Protobuf type {@code pb.CPU}
  */
 public final class CPU extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:techschool.pcbook.CPU)
+    // @@protoc_insertion_point(message_implements:pb.CPU)
     CPUOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use CPU.newBuilder() to construct.
@@ -34,13 +34,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_techschool_pcbook_CPU_descriptor;
+    return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_pb_CPU_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_techschool_pcbook_CPU_fieldAccessorTable
+    return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_pb_CPU_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.gitlab.techschool.pcbook.pb.CPU.class, com.gitlab.techschool.pcbook.pb.CPU.Builder.class);
   }
@@ -380,21 +380,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code techschool.pcbook.CPU}
+   * Protobuf type {@code pb.CPU}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:techschool.pcbook.CPU)
+      // @@protoc_insertion_point(builder_implements:pb.CPU)
       com.gitlab.techschool.pcbook.pb.CPUOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_techschool_pcbook_CPU_descriptor;
+      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_pb_CPU_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_techschool_pcbook_CPU_fieldAccessorTable
+      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_pb_CPU_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.gitlab.techschool.pcbook.pb.CPU.class, com.gitlab.techschool.pcbook.pb.CPU.Builder.class);
     }
@@ -425,7 +425,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_techschool_pcbook_CPU_descriptor;
+      return com.gitlab.techschool.pcbook.pb.ProcessorMessage.internal_static_pb_CPU_descriptor;
     }
 
     @java.lang.Override
@@ -895,10 +895,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:techschool.pcbook.CPU)
+    // @@protoc_insertion_point(builder_scope:pb.CPU)
   }
 
-  // @@protoc_insertion_point(class_scope:techschool.pcbook.CPU)
+  // @@protoc_insertion_point(class_scope:pb.CPU)
   private static final com.gitlab.techschool.pcbook.pb.CPU DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.gitlab.techschool.pcbook.pb.CPU();
