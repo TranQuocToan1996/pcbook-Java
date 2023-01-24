@@ -7,6 +7,8 @@ import com.gitlab.techschool.pcbook.pb.CreateLaptopRequest;
 import com.gitlab.techschool.pcbook.pb.CreateLaptopResponse;
 import com.gitlab.techschool.pcbook.pb.Laptop;
 import com.gitlab.techschool.pcbook.pb.LaptopServiceGrpc;
+import com.gitlab.techschool.pcbook.pb.SearchLaptopRequest;
+import com.gitlab.techschool.pcbook.pb.SearchLaptopResponse;
 
 import io.grpc.Context;
 import io.grpc.Status;
@@ -75,4 +77,22 @@ public class LaptopService extends LaptopServiceGrpc.LaptopServiceImplBase {
 
         logger.info("saved laptop with ID: " + other.getId());
     }
+
+    @Override
+    public void searchLaptop(SearchLaptopRequest request, StreamObserver<SearchLaptopResponse> responseObserver) {
+        var filter = request.getFilter();
+        logger.info("got a search laptop request with filer" + filter);
+        store.Search(Context.current(), filter, new LaptopStream() {
+            @Override
+            public void Send(Laptop laptop) {
+                logger.info("found laptop with id " + laptop.getId());
+                var resp = SearchLaptopResponse.newBuilder().setLaptop(laptop).build();
+                responseObserver.onNext(resp);
+            }
+        });
+
+        responseObserver.onCompleted();
+        logger.info("done streaming search laptop");
+    }
+
 }
