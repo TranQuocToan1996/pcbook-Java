@@ -1,5 +1,6 @@
 package com.gitlab.techschool.pcbook.service;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -9,6 +10,8 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.net.ssl.SSLException;
 
 import com.gitlab.techschool.pcbook.pb.CreateLaptopRequest;
 import com.gitlab.techschool.pcbook.pb.CreateLaptopResponse;
@@ -32,13 +35,24 @@ import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.Status;
 import io.grpc.StatusRuntimeException;
+import io.grpc.netty.GrpcSslContexts;
+import io.grpc.netty.NettyChannelBuilder;
 import io.grpc.stub.StreamObserver;
+import io.netty.handler.ssl.SslContext;
 
 public class LaptopClient {
     private static final Logger logger = Logger.getLogger(LaptopClient.class.getName());
 
     private final ManagedChannel channel;
+
+    // https://grpc.io/docs/languages/java/basics/
+    // a blocking/synchronous stub: this means that the RPC call waits for the
+    // server to respond, and will either return a response or raise an exception.
     private final LaptopServiceBlockingStub blockingStub;
+
+    // a non-blocking/asynchronous stub that makes non-blocking calls to the server,
+    // where the response is returned asynchronously. You can make certain types of
+    // streaming call only using the asynchronous stub.
     private final LaptopServiceGrpc.LaptopServiceStub asyncStub;
 
     public LaptopClient(String host, int port) {
@@ -46,14 +60,16 @@ public class LaptopClient {
                 .usePlaintext()
                 .build();
 
-        // https://grpc.io/docs/languages/java/basics/
-        // a blocking/synchronous stub: this means that the RPC call waits for the
-        // server to respond, and will either return a response or raise an exception.
         blockingStub = LaptopServiceGrpc.newBlockingStub(channel);
+        asyncStub = LaptopServiceGrpc.newStub(channel);
+    }
 
-        // a non-blocking/asynchronous stub that makes non-blocking calls to the server,
-        // where the response is returned asynchronously. You can make certain types of
-        // streaming call only using the asynchronous stub.
+    public LaptopClient(String host, int port, SslContext sslContext) {
+        channel = NettyChannelBuilder.forAddress(host, port)
+                .sslContext(sslContext)
+                .build();
+
+        blockingStub = LaptopServiceGrpc.newBlockingStub(channel);
         asyncStub = LaptopServiceGrpc.newStub(channel);
     }
 
@@ -301,8 +317,20 @@ public class LaptopClient {
         scanner.close();
     }
 
-    public static void main(String[] args) throws InterruptedException {
-        LaptopClient client = new LaptopClient("0.0.0.0", 8080);
+    public static SslContext loadTLSCredentials() throws SSLException {
+        File serverCaCertFile = new File("cert/ca-cert.pem");
+        File clientCertFile = new File("cert/client-cert.pem");
+        File clientKeyFile = new File("cert/client-key.pem");
+
+        return GrpcSslContexts.forClient()
+        .keyManager(clientCertFile, clientKeyFile)
+                .trustManager(serverCaCertFile)
+                .build();
+    }
+
+    public static void main(String[] args) throws InterruptedException, SSLException {
+        SslContext sslContext = LaptopClient.loadTLSCredentials();
+        LaptopClient client = new LaptopClient("0.0.0.0", 8080, sslContext);
 
         Generator generator = new Generator();
 

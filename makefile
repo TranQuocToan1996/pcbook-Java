@@ -1,4 +1,4 @@
-.Phony: build buildnotest buildtrace clean create protocopy
+.PHONY: build buildnotest buildtrace clean create protocopy
 build: clean
 	./gradlew build
 buildnotest: clean

@@ -1,11 +1,20 @@
 package com.gitlab.techschool.pcbook.service;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
+import javax.net.ssl.SSLException;
+
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
+import io.grpc.netty.GrpcSslContexts;
+import io.grpc.netty.NettyServerBuilder;
+import io.grpc.protobuf.services.ProtoReflectionService;
+import io.netty.handler.ssl.ClientAuth;
+import io.netty.handler.ssl.SslContext;
+import io.netty.handler.ssl.SslContextBuilder;
 
 public class LaptopServer {
     private static final Logger logger = Logger.getLogger(LaptopServer.class.getName());
@@ -18,11 +27,21 @@ public class LaptopServer {
         this(ServerBuilder.forPort(port), port, laptopStore, imageStore, ratingStore);
     }
 
+    public LaptopServer(int port,
+            LaptopStore laptopStore, ImageStore imageStore, RatingStore ratingStore,
+            SslContext sslContext) {
+        this(NettyServerBuilder
+                .forPort(port)
+                .sslContext(sslContext), port, laptopStore, imageStore, ratingStore);
+    }
+
     public LaptopServer(ServerBuilder serverBuilder, int port,
             LaptopStore laptopStore, ImageStore imageStore, RatingStore ratingStore) {
         this.port = port;
         LaptopService laptopService = new LaptopService(laptopStore, imageStore, ratingStore);
-        server = serverBuilder.addService(laptopService).build();
+        server = serverBuilder.addService(laptopService)
+                .addService(ProtoReflectionService.newInstance())
+                .build();
     }
 
     public void start() throws IOException {
@@ -49,6 +68,20 @@ public class LaptopServer {
         }
     }
 
+    public static SslContext loadTLSCredentials() throws SSLException {
+        File serverCertFile = new File("cert/server-cert.pem");
+        File serverKeyFile = new File("cert/server-key.pem");
+        File clientCaCertFile = new File("cert/ca-cert.pem");
+
+        // mutual both server and client
+        var ctxBuilder = SslContextBuilder.forServer(serverCertFile, serverKeyFile)
+                // .clientAuth(ClientAuth.NONE); // no client Auth
+                .clientAuth(ClientAuth.REQUIRE)
+                .trustManager(clientCaCertFile);// Mutual
+
+        return GrpcSslContexts.configure(ctxBuilder).build();
+    }
+
     private void blockUntilShutdown() throws InterruptedException {
         if (server != null) {
             server.awaitTermination();
@@ -60,7 +93,11 @@ public class LaptopServer {
         InMemoryLaptopStore laptopStore = new InMemoryLaptopStore();
         InMemoryRatingStore ratingStore = new InMemoryRatingStore();
         DiskImageStore imageStore = new DiskImageStore(imageFolder);
-        LaptopServer server = new LaptopServer(8080, laptopStore, imageStore, ratingStore);
+
+        SslContext sslContext = LaptopServer.loadTLSCredentials();
+
+        LaptopServer server = new LaptopServer(8080,
+                laptopStore, imageStore, ratingStore, sslContext);
         server.start();
         server.blockUntilShutdown();
     }
