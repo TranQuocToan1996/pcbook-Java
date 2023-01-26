@@ -1,11 +1,17 @@
 package com.gitlab.techschool.pcbook.sample;
 
-import com.gitlab.techschool.pcbook.pb.*;
-import com.google.protobuf.Timestamp;
-
 import java.time.Instant;
 import java.util.Random;
 import java.util.UUID;
+
+import com.gitlab.techschool.pcbook.pb.CPU;
+import com.gitlab.techschool.pcbook.pb.GPU;
+import com.gitlab.techschool.pcbook.pb.Keyboard;
+import com.gitlab.techschool.pcbook.pb.Laptop;
+import com.gitlab.techschool.pcbook.pb.Memory;
+import com.gitlab.techschool.pcbook.pb.Screen;
+import com.gitlab.techschool.pcbook.pb.Storage;
+import com.google.protobuf.Timestamp;
 
 public class Generator {
     private Random rand;
@@ -246,5 +252,9 @@ public class Generator {
         Generator generator = new Generator();
         Laptop laptop = generator.NewLaptop();
         System.out.println(laptop);
+    }
+
+    public double NewLaptopScore() {
+        return randomInt(1, 10);
     }
 }

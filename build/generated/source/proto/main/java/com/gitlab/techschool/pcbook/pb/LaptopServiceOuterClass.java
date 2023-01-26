@@ -49,6 +49,16 @@ public final class LaptopServiceOuterClass {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_pb_UploadImageResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_pb_RateLaptopRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_pb_RateLaptopRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_pb_RateLaptopResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_pb_RateLaptopResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -69,14 +79,19 @@ public final class LaptopServiceOuterClass {
       "nk_data\030\002 \001(\014H\000B\006\n\004data\"2\n\tImageInfo\022\021\n\t" +
       "laptop_id\030\001 \001(\t\022\022\n\nimage_type\030\002 \001(\t\"/\n\023U" +
       "ploadImageResponse\022\n\n\002id\030\001 \001(\t\022\014\n\004size\030\002" +
-      " \001(\r2\337\001\n\rLaptopService\022C\n\014CreateLaptop\022\027" +
-      ".pb.CreateLaptopRequest\032\030.pb.CreateLapto" +
-      "pResponse\"\000\022E\n\014SearchLaptop\022\027.pb.SearchL" +
-      "aptopRequest\032\030.pb.SearchLaptopResponse\"\000" +
-      "0\001\022B\n\013UploadImage\022\026.pb.UploadImageReques" +
-      "t\032\027.pb.UploadImageResponse\"\000(\001BC\n\037com.gi" +
-      "tlab.techschool.pcbook.pbP\001Z\036github.com/" +
-      "TranQuocToan1996/pbb\006proto3"
+      " \001(\r\"5\n\021RateLaptopRequest\022\021\n\tlaptop_id\030\001" +
+      " \001(\t\022\r\n\005score\030\002 \001(\001\"S\n\022RateLaptopRespons" +
+      "e\022\021\n\tlaptop_id\030\001 \001(\t\022\023\n\013rated_count\030\002 \001(" +
+      "\r\022\025\n\raverage_score\030\003 \001(\0012\242\002\n\rLaptopServi" +
+      "ce\022C\n\014CreateLaptop\022\027.pb.CreateLaptopRequ" +
+      "est\032\030.pb.CreateLaptopResponse\"\000\022E\n\014Searc" +
+      "hLaptop\022\027.pb.SearchLaptopRequest\032\030.pb.Se" +
+      "archLaptopResponse\"\0000\001\022B\n\013UploadImage\022\026." +
+      "pb.UploadImageRequest\032\027.pb.UploadImageRe" +
+      "sponse\"\000(\001\022A\n\nRateLaptop\022\025.pb.RateLaptop" +
+      "Request\032\026.pb.RateLaptopResponse\"\000(\0010\001BC\n" +
+      "\037com.gitlab.techschool.pcbook.pbP\001Z\036gith" +
+      "ub.com/TranQuocToan1996/pbb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -126,6 +141,18 @@ public final class LaptopServiceOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_pb_UploadImageResponse_descriptor,
         new java.lang.String[] { "Id", "Size", });
+    internal_static_pb_RateLaptopRequest_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_pb_RateLaptopRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_pb_RateLaptopRequest_descriptor,
+        new java.lang.String[] { "LaptopId", "Score", });
+    internal_static_pb_RateLaptopResponse_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_pb_RateLaptopResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_pb_RateLaptopResponse_descriptor,
+        new java.lang.String[] { "LaptopId", "RatedCount", "AverageScore", });
     com.gitlab.techschool.pcbook.pb.LaptopMessage.getDescriptor();
     com.gitlab.techschool.pcbook.pb.FilterMessage.getDescriptor();
   }

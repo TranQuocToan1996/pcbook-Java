@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.Scanner;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -16,6 +17,10 @@ import com.gitlab.techschool.pcbook.pb.ImageInfo;
 import com.gitlab.techschool.pcbook.pb.Laptop;
 import com.gitlab.techschool.pcbook.pb.LaptopServiceGrpc;
 import com.gitlab.techschool.pcbook.pb.LaptopServiceGrpc.LaptopServiceBlockingStub;
+import com.gitlab.techschool.pcbook.pb.Memory;
+import com.gitlab.techschool.pcbook.pb.Memory.Unit;
+import com.gitlab.techschool.pcbook.pb.RateLaptopRequest;
+import com.gitlab.techschool.pcbook.pb.RateLaptopResponse;
 import com.gitlab.techschool.pcbook.pb.SearchLaptopRequest;
 import com.gitlab.techschool.pcbook.pb.SearchLaptopResponse;
 import com.gitlab.techschool.pcbook.pb.UploadImageRequest;
@@ -183,8 +188,117 @@ public class LaptopClient {
         if (!latch.await(1, TimeUnit.MINUTES)) {
             logger.warning("upload cant finish in 1 min");
         }
+    }
 
+    public void rateLaptop(String[] lapTopIDs, double[] scores) {
+        var latch = new CountDownLatch(1);
+        StreamObserver<RateLaptopRequest> rObserver = asyncStub.withDeadlineAfter(5, TimeUnit.SECONDS)
+                .rateLaptop(new StreamObserver<RateLaptopResponse>() {
+                    @Override
+                    public void onCompleted() {
+                        logger.info("rating laptop completed");
+                        latch.countDown();
+                    }
 
+                    @Override
+                    public void onError(Throwable t) {
+                        t.printStackTrace(System.out);
+                        logger.severe(t.getMessage());
+                        latch.countDown();
+                    }
+
+                    @Override
+                    public void onNext(RateLaptopResponse resp) {
+                        logger.info("sending laptopID" + resp.getLaptopId() +
+                                "rate count" + resp.getRatedCount() +
+                                "average count" + resp.getAverageScore());
+                    }
+                });
+        int n = lapTopIDs.length;
+        try {
+            for (var i = 0; i < n; i++) {
+                RateLaptopRequest request = RateLaptopRequest.newBuilder()
+                        .setLaptopId(lapTopIDs[i])
+                        .setScore(scores[i])
+                        .build();
+                rObserver.onNext(request);
+                logger.info("send req" + request);
+            }
+        } catch (Exception e) {
+            rObserver.onError(e);
+            return;
+        }
+
+        rObserver.onCompleted();
+        try {
+            if (!latch.await(1, TimeUnit.MINUTES)) {
+                logger.severe("rating timeout");
+            }
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+            logger.severe("rating latch error" + e.getMessage());
+        }
+    }
+
+    public static void testSearchLaptop(LaptopClient client, Generator generator) {
+        for (int i = 0; i < 10; i++) {
+            var laptop = generator.NewLaptop();
+            client.createLaptop(laptop);
+        }
+
+        var minRam = Memory.newBuilder()
+                .setValue(8)
+                .setUnit(Unit.GIGABYTE)
+                .build();
+
+        var filter = Filter.newBuilder()
+                .setMaxPriceUsd(3000)
+                .setMinCpuCores(4)
+                .setMinCpuGhz(2.5)
+                .setMinRam(minRam)
+                .build();
+        client.SearchLaptop(filter);
+    }
+
+    public static void testUploadImage(LaptopClient client, Generator generator) throws InterruptedException {
+
+        // for client streaming to server - async stub
+        var laptop = generator.NewLaptop();
+        client.createLaptop(laptop);
+        client.uploadImage(laptop.getId(), "tmp/laptop.png");
+
+    }
+
+    public static void testRateLaptop(LaptopClient client, Generator generator) throws InterruptedException {
+        int n = 3;
+        String[] laptopIDs = new String[n];
+        for (var i = 0; i < n; i++) {
+            var laptop = generator.NewLaptop();
+            laptopIDs[i] = laptop.getId();
+            client.createLaptop(laptop);
+        }
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            logger.info("rate laptop (y/n)");
+            String answer = scanner.nextLine();
+            if (answer.toLowerCase().trim().equals("n")) {
+                break;
+            }
+
+            if (!answer.toLowerCase().trim().equals("y")) {
+                logger.info("must y or n");
+                continue;
+            }
+
+            double[] scores = new double[n];
+            for (var i = 0; i < n; i++) {
+                scores[i] = generator.NewLaptopScore();
+            }
+
+            client.rateLaptop(laptopIDs, scores);
+        }
+
+        scanner.close();
     }
 
     public static void main(String[] args) throws InterruptedException {
@@ -193,32 +307,7 @@ public class LaptopClient {
         Generator generator = new Generator();
 
         try {
-            /*
-             * Test code for unary - blocking stub client
-             * for (int i = 0; i < 10; i++) {
-             * var laptop = generator.NewLaptop();
-             * client.createLaptop(laptop);
-             * }
-             * 
-             * var minRam = Memory.newBuilder()
-             * .setValue(8)
-             * .setUnit(Unit.GIGABYTE)
-             * .build();
-             * 
-             * var filter = Filter.newBuilder()
-             * .setMaxPriceUsd(3000)
-             * .setMinCpuCores(4)
-             * .setMinCpuGhz(2.5)
-             * .setMinRam(minRam)
-             * .build();
-             * client.SearchLaptop(filter);
-             */
-
-            // for client streaming to server - async stub
-            var laptop = generator.NewLaptop();
-            client.createLaptop(laptop);
-            client.uploadImage(laptop.getId(), "tmp/laptop.png");
-
+            testRateLaptop(client, generator);
         } finally {
             client.shutdown();
         }

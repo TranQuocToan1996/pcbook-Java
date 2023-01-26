@@ -9,6 +9,8 @@ import com.gitlab.techschool.pcbook.pb.CreateLaptopRequest;
 import com.gitlab.techschool.pcbook.pb.CreateLaptopResponse;
 import com.gitlab.techschool.pcbook.pb.Laptop;
 import com.gitlab.techschool.pcbook.pb.LaptopServiceGrpc;
+import com.gitlab.techschool.pcbook.pb.RateLaptopRequest;
+import com.gitlab.techschool.pcbook.pb.RateLaptopResponse;
 import com.gitlab.techschool.pcbook.pb.SearchLaptopRequest;
 import com.gitlab.techschool.pcbook.pb.SearchLaptopResponse;
 import com.gitlab.techschool.pcbook.pb.UploadImageRequest;
@@ -25,10 +27,13 @@ public class LaptopService extends LaptopServiceGrpc.LaptopServiceImplBase {
 
     private LaptopStore laptopStore;
     private ImageStore imageStore;
+    private RatingStore ratingStore;
 
-    public LaptopService(LaptopStore laptopStore, ImageStore imageStore) {
+    public LaptopService(LaptopStore laptopStore,
+            ImageStore imageStore, RatingStore ratingStore) {
         this.laptopStore = laptopStore;
         this.imageStore = imageStore;
+        this.ratingStore = ratingStore;
     }
 
     @Override
@@ -111,7 +116,7 @@ public class LaptopService extends LaptopServiceGrpc.LaptopServiceImplBase {
     public StreamObserver<UploadImageRequest> uploadImage(StreamObserver<UploadImageResponse> responseObserver) {
         return new StreamObserver<UploadImageRequest>() {
             public static final int maxImageChunk = 1 << 10; // 1 kB
-            private static final int maxImageSize = 1 << 20; // 10 Mb
+            private static final int maxImageSize = 1 << 20; // 1 Mb
             private String laptopID;
             private String imageType;
             private ByteArrayOutputStream imageByte;
@@ -129,10 +134,9 @@ public class LaptopService extends LaptopServiceGrpc.LaptopServiceImplBase {
                     // Check laptop with ID is in the store
                     if (laptopStore.Find(laptopID) == null) {
                         logger.info("not found laptopID in store with id " + laptopID);
-                        responseObserver.onError(
-                                Status.NOT_FOUND
-                                        .withDescription("not found laptopID in store with id " + laptopID)
-                                        .asRuntimeException());
+                        responseObserver.onError(Status.NOT_FOUND
+                                .withDescription("not found laptopID in store with id " + laptopID)
+                                .asRuntimeException());
                         return;
                     }
 
@@ -143,40 +147,36 @@ public class LaptopService extends LaptopServiceGrpc.LaptopServiceImplBase {
                 logger.info("receive image byte string with size " + imageChunk.size());
                 if (imageByte == null) {
                     logger.info("got no image byte" + imageChunk.size());
-                    responseObserver.onError(
-                            Status.INVALID_ARGUMENT
-                                    .withDescription("[got no image byte]")
-                                    .asRuntimeException());
+                    responseObserver.onError(Status.INVALID_ARGUMENT
+                            .withDescription("[got no image byte]")
+                            .asRuntimeException());
                     return;
                 }
 
                 if (imageChunk.size() > maxImageChunk) {
                     logger.info("chunk_size " + imageChunk.size() + " exceed max size " + maxImageChunk);
-                    responseObserver.onError(
-                            Status.INVALID_ARGUMENT
-                                    .withDescription("chunk_size " + imageChunk.size() + " exceed max size "
-                                            + maxImageChunk)
-                                    .asRuntimeException());
+                    responseObserver.onError(Status.INVALID_ARGUMENT
+                            .withDescription("chunk_size " + imageChunk.size() + " exceed max size "
+                                    + maxImageChunk)
+                            .asRuntimeException());
                     return;
                 }
 
                 if (imageChunk.size() + imageByte.size() > maxImageSize) {
                     logger.info("chunk_size " + imageChunk.size() + " exceed max size " + maxImageChunk);
-                    responseObserver.onError(
-                            Status.INVALID_ARGUMENT
-                                    .withDescription("Image too big with exceed max size "
-                                            + maxImageSize)
-                                    .asRuntimeException());
+                    responseObserver.onError(Status.INVALID_ARGUMENT
+                            .withDescription("Image too big with exceed max size "
+                                    + maxImageSize)
+                            .asRuntimeException());
                     return;
                 }
 
                 try {
                     imageChunk.writeTo(imageByte);
                 } catch (IOException e) {
-                    responseObserver.onError(
-                            Status.INTERNAL
-                                    .withDescription("[fail to write chunk data to image stream]" + e.getMessage())
-                                    .asRuntimeException());
+                    responseObserver.onError(Status.INTERNAL
+                            .withDescription("[fail to write chunk data to image stream]" + e.getMessage())
+                            .asRuntimeException());
                     return;
                 }
             }
@@ -188,11 +188,9 @@ public class LaptopService extends LaptopServiceGrpc.LaptopServiceImplBase {
                 try {
                     imageID = imageStore.Save(laptopID, imageType, imageByte);
                 } catch (IOException e) {
-                    responseObserver.onError(
-                            Status.INTERNAL
-                                    .withDescription(
-                                            "[fail to save image after receive all chunks of image]" + e.getMessage())
-                                    .asRuntimeException());
+                    responseObserver.onError(Status.INTERNAL
+                            .withDescription("[fail to save image after receive all chunks of image]" + e.getMessage())
+                            .asRuntimeException());
                     return;
                 }
 
@@ -210,6 +208,48 @@ public class LaptopService extends LaptopServiceGrpc.LaptopServiceImplBase {
             @Override
             public void onError(Throwable t) {
                 logger.warning("[onError]" + t.getMessage());
+            }
+        };
+    }
+
+    @Override
+    public StreamObserver<RateLaptopRequest> rateLaptop(
+            StreamObserver<RateLaptopResponse> responseObserver) {
+        return new StreamObserver<RateLaptopRequest>() {
+            @Override
+            public void onCompleted() {
+                logger.info("complete rating");
+                responseObserver.onCompleted();
+            }
+
+            @Override
+            public void onError(Throwable t) {
+                t.printStackTrace(System.out);
+                logger.warning(t.getMessage());
+            }
+
+            @Override
+            public void onNext(RateLaptopRequest req) {
+                String laptopID = req.getLaptopId();
+                double score = req.getScore();
+                logger.info("receive rate laptop req with laptop_id" +
+                        laptopID + " and socore" + score);
+                Laptop found = laptopStore.Find(laptopID);
+                if (found == null) {
+                    responseObserver.onError(Status.INTERNAL
+                            .withDescription("[laptopID doesnt exist]")
+                            .asRuntimeException());
+                    return;
+                }
+
+                Rating rating = ratingStore.Add(laptopID, score);
+                RateLaptopResponse resp = RateLaptopResponse.newBuilder()
+                        .setLaptopId(laptopID)
+                        .setRatedCount(rating.getCount())
+                        .setAverageScore(rating.getSum() / rating.getCount())
+                        .build();
+
+                responseObserver.onNext(resp);
             }
         };
     }
